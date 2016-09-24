@@ -35,6 +35,8 @@ void setup() {
 
 void loop() { 
 
+   float pin1Data = analogRead(PIN1);
+   writeToField1(pin1Data);
 }
 
 void writeToField1(float data){
@@ -56,6 +58,9 @@ void writeToField1(float data){
            
   }
   client.stop();
+
+  // thingspeak needs 15 sec delay between updates
+  delay(16000); 
 }
 
 int readSignalFrom(int pinNum){
