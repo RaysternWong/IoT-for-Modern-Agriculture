@@ -1,21 +1,28 @@
 #include <SoftwareSerial.h>
+#include <ESP8266WiFi.h>
 
-SoftwareSerial Wifi(2,3); //pin2 as RX pin, pin3 as TX pin
-
+const char* ssid = "familywong88";
+const char* password = "72680384";
+ 
 void setup() {
-  Serial.begin(9600);
-  Serial.println("Wifi Started");
-  Wifi.begin(9600);
+  Serial.begin(115200);
+  delay(10);
 
+  WiFi.begin(ssid, password);
+ 
+  Serial.print("\n\nConnecting to ");
+  Serial.println(ssid);
+   
+  WiFi.begin(ssid, password);
+   
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
+  }
+  Serial.println("\nWiFi connected");
 }
 
 
 void loop() { 
-  
-  if (Wifi.available()) {
-    Serial.write(Wifi.read());
-  }
-  if (Serial.available()) {
-    Wifi.write(Serial.read());
-  }
+
 }
