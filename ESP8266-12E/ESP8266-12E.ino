@@ -15,6 +15,10 @@ const char* password = "72680384";
 const char* server = "api.thingspeak.com";
 
 void setup() {
+  connectToWifi(ssid, password);
+}
+
+void connectToWifi(const char *ssid,const char *password){
   Serial.begin(115200);
   delay(10);
 
@@ -35,8 +39,8 @@ void setup() {
 
 void loop() { 
 
-   float pin1Data = analogRead(PIN1);
-   writeToField1(pin1Data);
+   //float pin1Data = analogRead(PIN1);
+   //writeToField1(pin1Data);
 }
 
 void writeToField1(float data){
