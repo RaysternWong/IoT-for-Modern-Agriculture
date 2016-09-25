@@ -14,8 +14,17 @@ const char* ssid = "familywong88";
 const char* password = "72680384";
 const char* server = "api.thingspeak.com";
 
+SoftwareSerial wifi(2,3);
+
 void setup() {
-  connectToWifi(ssid, password);
+
+  connectToWifi(ssid,password);
+
+}
+
+void loop() { 
+
+ 
 }
 
 void connectToWifi(const char *ssid,const char *password){
@@ -37,11 +46,7 @@ void connectToWifi(const char *ssid,const char *password){
 }
 
 
-void loop() { 
 
-   //float pin1Data = analogRead(PIN1);
-   //writeToField1(pin1Data);
-}
 
 void writeToField1(float data){
   if (client.connect(server,80)) {  //   "184.106.153.149" or api.thingspeak.com
