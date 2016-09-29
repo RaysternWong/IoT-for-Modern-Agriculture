@@ -4,7 +4,6 @@
 
 
 void connectToWifi(const char *ssid,const char *password){
-  //detectSSID(ssid);
   connectSSID(ssid,password);
 }
 

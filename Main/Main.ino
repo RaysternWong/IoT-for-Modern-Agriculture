@@ -14,7 +14,7 @@ const char* password = "72680384";
 const char* server = "api.thingspeak.com";
 
 void setup() {
-  Serial.begin(9600);
+  Serial.begin(115200);
   delay(10);
 
   connectToWifi(ssid,password);
