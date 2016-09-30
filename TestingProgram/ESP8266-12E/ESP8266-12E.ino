@@ -10,8 +10,12 @@ WiFiClient client;
 String apiWrite = "DRW5K6F91WT954LA"; //The Key for write data to channel
 String apiRead  = "QW4PODDM2Q96LA24"; //The Key for read data from channel
 
-const char* ssid = "familywong88";
-const char* password = "72680384";
+//const char* ssid = "familywong88";
+//const char* password = "72680384";
+
+
+const char* ssid = "TARUC Wireless";
+const char* password = "";
 const char* server = "api.thingspeak.com";
 
 SoftwareSerial wifi(2,3);
