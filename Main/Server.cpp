@@ -4,39 +4,49 @@
 #include <string.h>
 
 void connectToWifi(const char *ssid,const char *password){
-  scanSSID(ssid);
+  if(scanSSID(ssid) == true){
+    Serial.printf("%s is found, if the connection time is too long, then you might have wrong password\n", ssid);
+  }else{
+    Serial.printf("%s is not found, but system will try to connect to it, please ensure the distance is close\n", ssid);
+  }
   connectSSID(ssid,password);
 }
 
-void scanSSID(const char *ssid){
+bool scanSSID(const char *ssid){
+  bool exist = false;
+  const char *ID;
   Serial.println("scan start");
 
   int n = WiFi.scanNetworks();  // WiFi.scanNetworks will return the number of networks found
   Serial.printf("scan done, %d networks found\n", n);
   
   for (int i = 0; i < n; ++i){
-    // Print SSID and RSSI for each network found
-    Serial.printf("%d :",i + 1);
+    String s = WiFi.SSID(i);
+    ID = s.c_str();
+
+    if(strcmp(ssid, ID) == 0)
+      exist = true;
+
+    /*
+    Serial.printf("%d : ",i + 1);
     Serial.print(WiFi.SSID(i));
-    Serial.print(" (");
-    Serial.print(WiFi.RSSI(i));
-    Serial.print(")");
+    */
+    Serial.printf("%d : %s ",i + 1, ID);
+    Serial.printf(" (%ld)",WiFi.RSSI(i));
     Serial.println((WiFi.encryptionType(i) == ENC_TYPE_NONE)?" ":"*");
     delay(10);
   }
-  Serial.println("");
+  return exist;
 }
 
-
 void connectSSID(const char *ssid,const char *password){
-  Serial.printf("\n\nConnecting to %s\n", ssid);
+  Serial.printf("Connecting to %s\n", ssid);
   WiFi.begin(ssid, password);
    
   while (WiFi.status() != WL_CONNECTED) {
     delay(500);
     Serial.print(".");
   }
-
   Serial.println("\nWiFi connected");
   Serial.printf("IP address: ");
   Serial.println(WiFi.localIP());
