@@ -1,31 +1,33 @@
 #include "Server.h"
 #include <SoftwareSerial.h>
 #include <ESP8266WiFi.h>
-
+#include <string.h>
 
 void connectToWifi(const char *ssid,const char *password){
+  scanSSID(ssid);
   connectSSID(ssid,password);
 }
 
-bool detectSSID(const char *ssid){
-  Serial.println("\nscan start");
+void scanSSID(const char *ssid){
+  Serial.println("scan start");
 
-  // WiFi.scanNetworks will return the number of networks found
-  int n = WiFi.scanNetworks();
-  Serial.println("scan done");
-  Serial.printf("%d networks found\n", n);
+  int n = WiFi.scanNetworks();  // WiFi.scanNetworks will return the number of networks found
+  Serial.printf("scan done, %d networks found\n", n);
   
-  for (int i = 0; i < n; ++i)
-  {
-  // Print SSID and RSSI for each network found
+  for (int i = 0; i < n; ++i){
+    // Print SSID and RSSI for each network found
     Serial.printf("%d :",i + 1);
     Serial.print(WiFi.SSID(i));
-    Serial.printf("( %s\n )",WiFi.RSSI(i));
+    Serial.print(" (");
+    Serial.print(WiFi.RSSI(i));
+    Serial.print(")");
     Serial.println((WiFi.encryptionType(i) == ENC_TYPE_NONE)?" ":"*");
     delay(10);
-   }
+  }
   Serial.println("");
 }
+
+
 void connectSSID(const char *ssid,const char *password){
   Serial.printf("\n\nConnecting to %s\n", ssid);
   WiFi.begin(ssid, password);

@@ -9,11 +9,11 @@
 String apiWrite = "DRW5K6F91WT954LA"; //The Key for write data to channel
 String apiRead  = "QW4PODDM2Q96LA24"; //The Key for read data from channel
 
-//const char* ssid = "familywong88";
-//const char* password = "72680384";
+const char* ssid = "familywong88";
+const char* password = "72680384";
 
-const char* ssid = "TARUC Wireless";
-const char* password = "";
+//const char* ssid = "TARUC Wireless";
+//const char* password = "";
 
 const char* server = "api.thingspeak.com";
 
@@ -27,6 +27,7 @@ void setup() {
 }
 
 void loop() {
+  /*
   // read the input on analog pin 0:
   int sensorValue = analogRead(12);
   // Convert the analog reading (which goes from 0 - 1023) to a voltage (0 - 5V):
@@ -57,5 +58,5 @@ void loop() {
   Serial.println("Waiting...");    
   // thingspeak needs minimum 15 sec delay between updates
   delay(20000);  
-
+  */
 }
