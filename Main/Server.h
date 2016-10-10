@@ -1,10 +1,8 @@
 #ifndef H_SERVER
 #define H_SERVER
+#include <WString.h>
 
-void connectToWifi(const char *ssid,const char *password);
-bool scanSSID(const char *ssid);
-void connectSSID(const char *ssid,const char *password);
-
+void writeDataToThingSpeak(float data, String apiWrite, String field);
 
 #endif // H_SERVER
 

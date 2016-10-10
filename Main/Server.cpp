@@ -1,56 +1,31 @@
 #include "Server.h"
 #include <SoftwareSerial.h>
 #include <ESP8266WiFi.h>
-#include <string.h>
 
-void connectToWifi(const char *ssid,const char *password){
-  if(scanSSID(ssid) == true){
-    Serial.printf("%s is found, if the connection time is too long, then you might have wrong password\n", ssid);
-  }else{
-    Serial.printf("%s is not found, but system will try to connect to it, please ensure the distance is close\n", ssid);
+WiFiClient client;
+
+const char* thingSpeakIP = "api.thingspeak.com"; // "184.106.153.149"
+
+void writeDataToThingSpeak(float data, String apiWrite, String field){
+  if (client.connect(thingSpeakIP,80)) {  //   "184.106.153.149" or api.thingspeak.com
+    String postStr  = field;          // apiKey
+           postStr += "=";            // apiKey field1 = 
+           postStr += String(data);   // apiKey field1 = data
+ 
+     client.print("POST /update HTTP/1.1\n"); 
+     client.print("Host: api.thingspeak.com\n"); 
+     client.print("Connection: close\n"); 
+     client.print("X-THINGSPEAKAPIKEY: "+apiWrite+"\n"); 
+     client.print("Content-Type: application/x-www-form-urlencoded\n"); 
+     client.print("Content-Length: "); 
+     client.print(postStr.length()); 
+     client.print("\n\n"); 
+     client.print(postStr);
   }
-  connectSSID(ssid,password);
-}
-
-bool scanSSID(const char *ssid){
-  bool exist = false;
-  const char *ID;
-  Serial.println("scan start");
-
-  int n = WiFi.scanNetworks();  // WiFi.scanNetworks will return the number of networks found
-  Serial.printf("scan done, %d networks found\n", n);
-  
-  for (int i = 0; i < n; ++i){
-    String s = WiFi.SSID(i);
-    ID = s.c_str();
-
-    if(strcmp(ssid, ID) == 0)
-      exist = true;
-
-    /*
-    Serial.printf("%d : ",i + 1);
-    Serial.print(WiFi.SSID(i));
-    */
-    Serial.printf("%d : %s ",i + 1, ID);
-    Serial.printf(" (%ld)",WiFi.RSSI(i));
-    Serial.println((WiFi.encryptionType(i) == ENC_TYPE_NONE)?" ":"*");
-    delay(10);
-  }
-  return exist;
-}
-
-void connectSSID(const char *ssid,const char *password){
-  Serial.printf("Connecting to %s\n", ssid);
-  WiFi.begin(ssid, password);
+  client.stop();
    
-  while (WiFi.status() != WL_CONNECTED) {
-    delay(500);
-    Serial.print(".");
-  }
-  Serial.println("\nWiFi connected");
-  Serial.printf("IP address: ");
-  Serial.println(WiFi.localIP());
+  Serial.println("Waiting...");    
+  delay(16000);   // thingspeak needs minimum 15 sec delay between updates
 }
-
 
 
