@@ -28,7 +28,7 @@ const char* password = "72680384";
 //const char* password = "";
 //const char* server = "api.thingspeak.com";
 
-DHT dht(D8, DHT11,15);
+DHT dht(D8, DHT11,15); //Using D8 as receive pin, snesor type is DHT11, byte count is 15
 
 void setup() {
   Serial.begin(BAUDRATE);
@@ -39,12 +39,18 @@ void setup() {
 }
 
 void loop() {
-  int data1 = 0;
-  data1 = digitalRead(D6);
-  Serial.println(data1);
+  float h =0, t = 0;
+  h = dht.readHumidity();
+  t = dht.readTemperature();
   
+  Serial.print("\nTemperature : ");
+  Serial.print(t);
+  Serial.print("Degree Celcius  Humidity : ");
+  Serial.print(h);
+  Serial.print("AH\n");
 
-  
+
+  Serial.println();
+
   delay(2000);  
-
 }
