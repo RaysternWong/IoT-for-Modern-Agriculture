@@ -2,7 +2,7 @@
 #define H_SERVER
 #include <WString.h>
 
-void writeDataToThingSpeak(float data, String apiWrite, String field);
+void writeDataToThingSpeak(String writeDetails, String apiWrite);
 
 #endif // H_SERVER
 

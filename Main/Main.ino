@@ -18,8 +18,8 @@
 
 #define BAUDRATE 115200
 
-String apiWrite = "DRW5K6F91WT954LA"; //The Key for write data to channel
-String apiRead  = "QW4PODDM2Q96LA24"; //The Key for read data from channel
+String apiWrite = "GB91TIAKXFPD6JNX"; //The Key for write data to channel
+String apiRead  = "0N7QYR503X9K51FA"; //The Key for read data from channel
 
 const char* ssid = "familywong88";
 const char* password = "72680384";
@@ -50,7 +50,18 @@ void loop() {
   Serial.print("AH\n");
 
 
+  String writeDetails = apiWrite;
+  writeDetails +=("&field1=" + String(t));
+  writeDetails +=("&field2=" + String(h));
+  writeDetails +="\r\n\r\n";
+
+  Serial.println(writeDetails);
+  
+  //String writeDetails  ="field1=" + String(t);
+  //       writeDetails +="field2=" + String(h);
+
+  writeDataToThingSpeak(writeDetails,apiWrite);
   Serial.println();
 
-  delay(2000);  
+  delay(500);  
 }
