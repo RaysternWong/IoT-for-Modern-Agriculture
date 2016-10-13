@@ -28,7 +28,7 @@ const char* password = "72680384";
 //const char* password = "";
 //const char* server = "api.thingspeak.com";
 
-DHT dht(D8, DHT11,15); //Using D8 as receive pin, snesor type is DHT11, byte count is 15
+DHT dht(D7, DHT11,15); //Using D7 as receive pin, snesor type is DHT11, byte count is 15
 
 void setup() {
   Serial.begin(BAUDRATE);

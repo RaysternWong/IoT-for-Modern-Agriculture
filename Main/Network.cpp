@@ -2,7 +2,7 @@
 #include <SoftwareSerial.h>
 #include <ESP8266WiFi.h>
 
-void connectToWifi(const char *ssid,const char *password){
+void connectToWifi(const char *ssid,const char *password){  
   if(scanSSID(ssid) == true){
     Serial.printf("%s is found, if the connection time is too long, then you might have wrong password\n\n", ssid);
   }else{
