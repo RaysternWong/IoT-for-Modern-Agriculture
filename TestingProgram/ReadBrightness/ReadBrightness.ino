@@ -1,10 +1,10 @@
 
-static const uint8_t D1   = 5;
+#define D1 5
 
 void setup() {
   // initialize serial communication at 9600 bits per second:
   Serial.begin(115200);
-  pinMode(5,OUTPUT );
+  pinMode(D1,OUTPUT );
 
 }
 
@@ -12,22 +12,24 @@ void setup() {
 void loop() {
 
   Serial.println("Write High");
-  delay(3000);
-  digitalWrite(5,HIGH);
-  int sensorValue = analogRead(A0);
-  float voltage = sensorValue * (1.0 / 1023.0);
-  Serial.println(sensorValue);
-  Serial.println(voltage);
 
-
+  digitalWrite(D1,HIGH);
+  int phValue = analogRead(A0);
+  float phVoltage = phValue * (1.0 / 1023.0);
+  int illuminance = phVoltage * 10000; // using the ratio : 1V =  10000Lus
+  Serial.println(phValue);
+  Serial.println(phVoltage);
+  Serial.printf("%d Lux\n",illuminance);
+  /*
   Serial.println("Write Low");
-  delay(3000);
-  digitalWrite(5,LOW);
-  sensorValue = analogRead(A0);
-  voltage = sensorValue * (1.0 / 1023.0);
-  Serial.println(sensorValue);
-  Serial.println(voltage);
-
+  digitalWrite(D1,LOW);
+  phValue = analogRead(A0);
+  phVoltage = phValue * (1.0 / 1023.0);
+  Serial.println(phValue);
+  Serial.println(phVoltage);
+  */
+  
+  delay(1000);
 
 
 }
