@@ -16,7 +16,7 @@ void loop() {
   digitalWrite(D1,HIGH);
   int phValue = analogRead(A0);
   float phVoltage = phValue * (1.0 / 1023.0);
-  int illuminance = phVoltage * 10000; // using the ratio : 1V =  10000Lus
+  int illuminance = phVoltage * 32000; // using the ratio : 0.01V =  320Lus , where 1V = 32000Lux
   Serial.println(phValue);
   Serial.println(phVoltage);
   Serial.printf("%d Lux\n",illuminance);
