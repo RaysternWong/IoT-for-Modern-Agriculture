@@ -1,10 +1,10 @@
 #include <SoftwareSerial.h>
 #include <ESP8266WiFi.h>
-#include <stdio.h>
 #include "DHT.h"
 #include "Server.h"
 #include "Network.h"
 #include "Setting.h"
+#include "Photoresistor.h"
 
 String apiWrite = "GB91TIAKXFPD6JNX"; //The Key for write data to channel
 String apiRead  = "0N7QYR503X9K51FA"; //The Key for read data from channel
@@ -24,36 +24,34 @@ DHT dht(D7, DHT11,15); //Using D7 as receive pin, snesor type is DHT11, byte cou
 void setup() {
   Serial.begin(BAUDRATE);
   delay(10);
+  
   connectToWifi(ssid,password);
+  pinMode( PH_POWER, OUTPUT );
   Serial.println("\n");
 }
 
 void loop() {
-  float h =0, t = 0;
-  h = dht.readHumidity();
-  t = dht.readTemperature();
+  float temperature = 0, humidity = 0;
+  int illuminance = 0;
+  
+  temperature = dht.readTemperature(); //In celcius(°C)
+  humidity    = dht.readHumidity();    //is return Relative Humidity, in percent(%)
+  illuminance = readBrightness(RSV);
+  
+  Serial.printf("Temperature              : %d celcius\n", temperature);      //%f is not recognize by my Arduino
+  Serial.printf("Relative Humidity        : %d %\n", humidity);             //%f is not recognize by my Arduino
+  Serial.printf("Illuminance (Brightness) : %d Lux\n", illuminance);
 
-  Serial.printf("\nTemperature : %d °C\n", (int)t);
-  Serial.printf("\nRelative Humidity : %d %\n", (int)h);
 
-  /*
-  Serial.print("\nTemperature : ");
-  Serial.print(t);
-  Serial.print("Degree Celcius  Humidity : ");
-  Serial.print(h);
-  Serial.print("AH\n");
-  */
 
   String writeDetails = apiWrite;
-  writeDetails +=("&field1=" + String(t));
-  writeDetails +=("&field2=" + String(h));
+  writeDetails +=("&field1=" + String(temperature));
+  writeDetails +=("&field2=" + String(humidity));
+  writeDetails +=("&field3=" + String(illuminance));
   writeDetails +="\r\n\r\n";
 
-  //Serial.println(writeDetails);
-  //String writeDetails  ="field1=" + String(t);
-  //       writeDetails +="field2=" + String(h);
-
   writeDataToThingSpeak(writeDetails,apiWrite);
-  Serial.println("\n");
+
   delay(500);  
+  Serial.println("\n");
 }
