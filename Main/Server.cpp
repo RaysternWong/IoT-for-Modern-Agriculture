@@ -1,3 +1,4 @@
+#include <ThingSpeak.h>
 #include "Server.h"
 #include <SoftwareSerial.h>
 #include <ESP8266WiFi.h>
