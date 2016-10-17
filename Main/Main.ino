@@ -11,7 +11,13 @@ unsigned long monitorChannel = 169688;
 const char *monitorWrite = "GB91TIAKXFPD6JNX"; //The Key for write data to channel
 const char *monitorRead  = "0N7QYR503X9K51FA"; //The Key for read data from channel
 
+unsigned long analysisChannel = 171094;
+const char *analysisWrite = "4JCJEWOPSIBJHMV2"; 
+const char *analysisRead  = "S0Z31XZI8CHT9JDQ"; 
+
 unsigned long operationChannel = 171780;
+const char *operationWrite = "XY2RZA5HK5ADFW2F"; 
+const char *operationRead  = "RJI8HKEATJP2H5EM"; 
 
 const char* ssid = "familywong88";
 const char* password = "72680384";
@@ -56,26 +62,17 @@ void loop() {
              
   Serial.printf("Illuminance (Brightness) : %d Lux\n\n", illuminance);
 
-  /*
-  String writeDetails = apiWrite;
-  writeDetails +=("&field1=" + String(temperature));
-  writeDetails +=("&field2=" + String(humidity));
-  writeDetails +=("&field3=" + String(illuminance));
-  writeDetails +="\r\n\r\n";
-
-  writeDataToThingSpeak(writeDetails,apiWrite);
-  */
-
-  ThingSpeak.writeField(monitorChannel, 1, temperature, monitorWrite);
-  ThingSpeak.writeField(monitorChannel, 2, humidity   , monitorWrite);
-  ThingSpeak.writeField(monitorChannel, 3, illuminance, monitorWrite);
+  ThingSpeak.setField(1, temperature);
+  ThingSpeak.setField(2, humidity);
+  ThingSpeak.setField(3, illuminance);
+  ThingSpeak.writeFields(monitorChannel, monitorWrite);  
 
   int ledBrightness = ThingSpeak.readFloatField(operationChannel, 2);
+  Serial.printf("LedBrightness            : %d Lux\n", ledBrightness);
+   
   ledBrightness = map(ledBrightness, 0, 32000, 0, 255);
   analogWrite(LED, ledBrightness);
   
-  Serial.printf("LedBrightness            : %d Lux\n", ledBrightness);
-
   delay(17000);  // ThingSpeak will only accept updates every 15 seconds, wait 17 second for safety
-  Serial.println("Wait for thingspeak 15sec update delay\n\n");
+  Serial.println("Wait 17sec for next update \n\n");
 }
