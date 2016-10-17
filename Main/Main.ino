@@ -1,7 +1,6 @@
-#include <ThingSpeak.h>
-
 #include <SoftwareSerial.h>
 #include <ESP8266WiFi.h>
+#include "ThingSpeak.h"
 #include "DHT.h"
 #include "Server.h"
 #include "Network.h"
@@ -9,8 +8,10 @@
 #include "Photoresistor.h"
 
 unsigned long monitorChannel = 169688;
-String monitorWrite = "GB91TIAKXFPD6JNX"; //The Key for write data to channel
-String monitorRead  = "0N7QYR503X9K51FA"; //The Key for read data from channel
+const char *monitorWrite = "GB91TIAKXFPD6JNX"; //The Key for write data to channel
+const char *monitorRead  = "0N7QYR503X9K51FA"; //The Key for read data from channel
+
+unsigned long operationChannel = 171780;
 
 const char* ssid = "familywong88";
 const char* password = "72680384";
@@ -19,6 +20,7 @@ const char* password = "72680384";
 //const char* password = "";
 
 DHT dht(D7, DHT11,15); //Using D7 as receive pin, snesor type is DHT11, byte count is 15
+
 
 WiFiClient  client;
 
@@ -31,6 +33,7 @@ void setup() {
   
   connectToWifi(ssid,password);
   pinMode( PH_POWER, OUTPUT );
+  pinMode( LED, OUTPUT );
   ThingSpeak.begin(client);
   Serial.println("\n");
 }
@@ -47,12 +50,11 @@ void loop() {
   Serial.print(temperature);
   Serial.println(" celcius");
 
-  Serial.print("Relative Humidity               :");
+  Serial.print("Relative Humidity        :");
   Serial.print(humidity);
   Serial.println(" percent");
              
-  Serial.printf("Illuminance (Brightness) : %d Lux\n", illuminance);
-
+  Serial.printf("Illuminance (Brightness) : %d Lux\n\n", illuminance);
 
   /*
   String writeDetails = apiWrite;
@@ -64,14 +66,16 @@ void loop() {
   writeDataToThingSpeak(writeDetails,apiWrite);
   */
 
-  
   ThingSpeak.writeField(monitorChannel, 1, temperature, monitorWrite);
   ThingSpeak.writeField(monitorChannel, 2, humidity   , monitorWrite);
   ThingSpeak.writeField(monitorChannel, 3, illuminance, monitorWrite);
 
-  int ledBrightness = ThingSpeak.readFloatField(weatherStationChannelNumber, temperatureFieldNumber);
+  int ledBrightness = ThingSpeak.readFloatField(operationChannel, 2);
+  ledBrightness = map(ledBrightness, 0, 32000, 0, 255);
+  analogWrite(LED, ledBrightness);
+  
+  Serial.printf("LedBrightness            : %d Lux\n", ledBrightness);
 
-
-  delay(500);  
-  Serial.println("\n");
+  delay(17000);  // ThingSpeak will only accept updates every 15 seconds, wait 17 second for safety
+  Serial.println("Wait for thingspeak 15sec update delay\n\n");
 }
