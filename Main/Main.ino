@@ -37,9 +37,12 @@ void loop() {
   temperature = dht.readTemperature(); //In celcius(°C)
   humidity    = dht.readHumidity();    //is return Relative Humidity, in percent(%)
   illuminance = readBrightness(RSV);
-  
-  Serial.printf("Temperature              : %d celcius\n", temperature);      //%f is not recognize by my Arduino
-  Serial.printf("Relative Humidity        : %d %\n", humidity);             //%f is not recognize by my Arduino
+
+  Serial.print("Temperature              :");
+  Serial.print(temperature);
+  Serial.println(" celcius");
+  //Serial.printf("Temperature              : %d celcius\n", (int)temperature);    //%f is not recognize by my Arduino
+  Serial.printf("Relative Humidity        : %d percent\n", (int)humidity);             
   Serial.printf("Illuminance (Brightness) : %d Lux\n", illuminance);
 
 
