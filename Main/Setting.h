@@ -17,6 +17,8 @@
 #define D10 1
 
 #define RSV A0    //In my situation, arduino take RSV pin (just near by A0) as ADC pin, this case was brief by ESP8266 data sheet
+#define A0_internat_value 6
+
 
 #define DHT11_PIN         D7      //Use D7 pin conecct DHT11
 #define PHOTO_PIN         RSV     //Photoresistor and water level sensor share the pin of RSV

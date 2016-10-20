@@ -19,11 +19,11 @@ unsigned long operationChannel = 171780;
 const char *operationWrite = "XY2RZA5HK5ADFW2F"; 
 const char *operationRead  = "RJI8HKEATJP2H5EM"; 
 
-const char* ssid = "familywong88";
-const char* password = "72680384";
+//const char* ssid = "familywong88";
+//const char* password = "72680384";
 
-//const char* ssid = "TARUC Wireless";
-//const char* password = "";
+const char* ssid = "TARUC Wireless";
+const char* password = "";
 
 DHT dht(D7, DHT11,15); //Using D7 as receive pin, snesor type is DHT11, byte count is 15
 
@@ -36,11 +36,13 @@ void setup() {
 
   //You might want to use WiFi.mode(WIFI_STA) to set your esp's wifi to station mode
   //I set it in AT command due to required of ESPressif Based firmware
-  
+  /*
   connectToWifi(ssid,password);
+  ThingSpeak.begin(client);
+  */
   pinMode( PH_POWER, OUTPUT );
   pinMode( LED, OUTPUT );
-  ThingSpeak.begin(client);
+  
   Serial.println("\n");
 }
 
@@ -62,6 +64,7 @@ void loop() {
              
   Serial.printf("Illuminance (Brightness) : %d Lux\n\n", illuminance);
 
+/*
   ThingSpeak.setField(1, temperature);
   ThingSpeak.setField(2, humidity);
   ThingSpeak.setField(3, illuminance);
@@ -74,5 +77,7 @@ void loop() {
   analogWrite(LED, ledBrightness);
   
   delay(17000);  // ThingSpeak will only accept updates every 15 seconds, wait 17 second for safety
+  */
+  delay(1000); 
   Serial.println("Wait 17sec for next update \n\n");
 }
