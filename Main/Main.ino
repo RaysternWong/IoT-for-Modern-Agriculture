@@ -6,6 +6,7 @@
 #include "Network.h"
 #include "Setting.h"
 #include "Photoresistor.h"
+#include "WaterLevelSensor.h"
 
 unsigned long monitorChannel = 169688;
 const char *monitorWrite = "GB91TIAKXFPD6JNX"; //The Key for write data to channel
@@ -39,6 +40,7 @@ void setup() {
   ThingSpeak.begin(client);
   
   pinMode( PH_POWER, OUTPUT );
+  pinMode( WL_POWER, OUTPUT );
   pinMode( LED, OUTPUT );
 
   Serial.println("\n");
@@ -47,10 +49,11 @@ void setup() {
 void loop() {
   float temperature = 0, humidity = 0;
   int illuminance = 0;
-  
+
+  illuminance = readBrightness(RSV);
   temperature = dht.readTemperature(); //In celcius(°C)
   humidity    = dht.readHumidity();    //is return Relative Humidity, in percent(%)
-  illuminance = readBrightness(RSV);
+  
 
   Serial.print("Temperature              :");
   Serial.print(temperature);
