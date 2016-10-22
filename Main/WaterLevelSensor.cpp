@@ -10,20 +10,23 @@
  * -------------------------------------------
  *    Water height(mm)    |   analogRead(A0) |
  * -------------------------------------------
- *         0.5            |       532        |
- *         1.0            |       600        | 
- *         1.5            |       648        | 
- *         2.0            |       700        | 
- *         2.5            |       759        | 
- *         3.0            |       784        |
- *         3.5            |       792        |
- *         4.0            |       805        |         
+ *           5            |       532        |
+ *          10            |       600        | 
+ *          15            |       648        | 
+ *          20            |       700        | 
+ *          25            |       759        | 
+ *          30            |       784        |
+ *          35            |       792        |
+ *          40            |       805        |         
 */
 
-/*
+
+#define $
+
+
 int readWaterLevel(int pinNum){
   int waterHeight, sensorValue;
-  digitalWrite(D5, HIGH);
+  digitalWrite(WL_POWER, HIGH);
   delay(500);
   sensorValue = analogRead(WATER_LEVEL_PIN);
 
@@ -52,8 +55,8 @@ int readWaterLevel(int pinNum){
 
   waterHeight = ( waterHeight > 40 ? 40 : waterHeight);
 
-  digitalWrite(D5, LOW);
+  digitalWrite(WL_POWER, LOW);
 
   return waterHeight;
-}*/
+}
 

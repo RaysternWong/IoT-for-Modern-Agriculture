@@ -27,7 +27,7 @@
 //Because the RSV pin is shared by 2 sensor, so the sensors has to use GPIO as supply
 //RSV can collect each data by taking round of power on the sensor
 #define  PH_POWER  D1 //Use D1 as photoresistor supply voltage
-#define  WL_POWER  D4 //Use D4 as water level sensor supply voltage
+#define  WL_POWER  D5 //Use D5 as water level sensor supply voltage
 #define  LED       D6
 
 #define BAUDRATE 115200

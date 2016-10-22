@@ -3,7 +3,7 @@
 #include <ESP8266WiFi.h>
 #include "Setting.h"
 
-#define READ_MIN 3
+#define READ_MIN 6
 #define READ_MAX 870
 #define BIRGHTNESS_MIN 0
 #define BIRGHTNESS_MAX 35000

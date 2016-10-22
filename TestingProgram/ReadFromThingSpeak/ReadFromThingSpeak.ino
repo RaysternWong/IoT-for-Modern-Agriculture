@@ -25,8 +25,8 @@ void loop() {
 
   Serial.print("Current ledBrightness is: "); 
   Serial.print(ledBrightness);
-  Serial.println(" Lux"); 
+  Serial.println(" Lux\n\n"); 
 
-  delay(15000); // Note that the weather station only updates once a minute
+//  delay(15000); // Note that the weather station only updates once a minute
   
 }
