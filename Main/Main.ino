@@ -20,8 +20,12 @@ unsigned long operationChannel = 171780;
 const char *operationWrite = "XY2RZA5HK5ADFW2F"; 
 const char *operationRead  = "RJI8HKEATJP2H5EM"; 
 
+//const char* ssid = "AceJocker";
+//const char* password = "jocker233";
+
 const char* ssid = "familywong88";
 const char* password = "72680384";
+
 
 //const char* ssid = "TARUC Wireless";
 //const char* password = "";
@@ -33,20 +37,20 @@ WiFiClient  client;
 void setup() {
   Serial.begin(BAUDRATE);
   delay(10);
+   connectToWifi(ssid,password); //You might want to use WiFi.mode(WIFI_STA) to set your esp's wifi to station mode , I set it in AT command due to required of ESPressif Based firmware
 
-  //You might want to use WiFi.mode(WIFI_STA) to set your esp's wifi to station mode
-  //I set it in AT command due to required of ESPressif Based firmware
-  connectToWifi(ssid,password);
-  ThingSpeak.begin(client);
-  
+  //pinMode(LED_BUILTIN, OUTPUT);
   pinMode( PH_POWER, OUTPUT );
   pinMode( WL_POWER, OUTPUT );
   pinMode( LED, OUTPUT );
-
+ 
+  //delay(1000);
+  //pinMode(LED_BUILTIN, INPUT);
+  ThingSpeak.begin(client);
   Serial.println("\n");
 }
 
-void loop() {
+void loop(){
   float temperature = 0, humidity = 0;
   int illuminance = 0, waterLevel = 0;
 
@@ -73,7 +77,7 @@ void loop() {
   ThingSpeak.writeFields(monitorChannel, monitorWrite);  
 
   Serial.println("Reading brightness control from ThingSpeak......");
-  int ledBrightness = ThingSpeak.readFloatField(operationChannel, 2);
+  int ledBrightness = ThingSpeak.readFloatField(operationChannel, 1);
   Serial.printf("Set LedBrightness to     : %d Lux\n", ledBrightness);
    
   ledBrightness = map(ledBrightness, 0, 35000, 0, 255);

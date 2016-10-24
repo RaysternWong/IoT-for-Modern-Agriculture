@@ -20,7 +20,7 @@
 #define A0_internat_value 6
 
 
-#define DHT11_PIN         D7      //Use D7 pin conecct DHT11
+#define DHT11_PIN         D6      //Use D6 pin conecct DHT11
 #define PHOTO_PIN         RSV     //Photoresistor and water level sensor share the pin of RSV
 #define WATER_LEVEL_PIN   RSV     
 
@@ -28,7 +28,7 @@
 //RSV can collect each data by taking round of power on the sensor
 #define  PH_POWER  D1 //Use D1 as photoresistor supply voltage
 #define  WL_POWER  D5 //Use D5 as water level sensor supply voltage
-#define  LED       D6
+#define  LED       D3
 
 #define BAUDRATE 115200
 
