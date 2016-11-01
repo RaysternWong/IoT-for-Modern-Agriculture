@@ -1,41 +1,82 @@
 #include <ESP8266WiFi.h>                  // Include ESP8266 library
-const char* ssid = "familywong88";           // SSID is set
-const char* password = "72680384";   // Password is set
+
+//const char* ssid = "AceJocker";
+//const char* password = "jocker233";
+
+//const char* ssid = "familywong88";
+//const char* password = "72680384";
+
+const char* ssid = "WongIoT";
+const char* password = "nodemcu888";
+
 #define LEDpin D0
+
 void setup()
 {
-  Serial.begin(115200);                   // Enable UART
-  Serial.println();
-  Serial.print("Connecting to ");         // Print title message to the serial monitor
-  Serial.println(ssid);                   // Print SSID name
-  pinMode(LEDpin, OUTPUT);
-  digitalWrite(LEDpin,HIGH);              // WiFi detected indicator - active low
+  Serial.begin(115200);
+
   WiFi.mode(WIFI_STA);
-  WiFi.begin(ssid, password);             // Send password
-  while (WiFi.status() != WL_CONNECTED)   // Check WiFi status
-  {
-    delay(200);
-    digitalWrite(LEDpin, LOW);
-    Serial.print(".");                    // Print dot for showing the progress status
-    delay(200);
-    digitalWrite(LEDpin, HIGH);    
-  }
-  Serial.println("");
-  WiFi.printDiag(Serial);
-  Serial.println("");
-  Serial.println("WiFi connected");       // Print the connected message
-  Serial.println("IP address: ");         // Print IP address
-  Serial.println(WiFi.localIP());
+  WiFi.disconnect();
+  delay(100);
+
+  connectToWifi(ssid,password);
+
+  pinMode(D0, OUTPUT); //Blink LED for indicate WiFi is connected 
+  delay(1000);
+  pinMode(D0, INPUT);  
 }
+
 void loop()
 {
-  digitalWrite(LEDpin, LOW);              // WiFi connected indicator - active low
-  while (WiFi.status() != WL_CONNECTED)   // Check WiFi status
-  {
-    digitalWrite(LEDpin, 0);              // LED at D0 blink when disconnect WiFi
-    delay(900);
-    Serial.println("connection WiFi failed");   // Print error message to Serial Monitor
-    digitalWrite(LEDpin, 1);
-    delay(100);
+ 
+
+}
+
+void connectToWifi(const char *ssid,const char *password){  
+  if(scanSSID(ssid) == true){
+    Serial.printf("%s is found, if the connection time is too long, then you might have wrong password\n\n", ssid);
+  }else{
+    Serial.printf("%s is not found, but system will try to connect to it, please ensure the distance is close\n\n", ssid);
   }
+  connectSSID(ssid,password);
+}
+
+bool scanSSID(const char *ssid){
+  bool exist = false;
+  const char *ID;
+  Serial.println("scan start");
+
+  int n = WiFi.scanNetworks();  // WiFi.scanNetworks will return the number of networks found
+  Serial.printf("scan done, %d networks found\n", n);
+  
+  for (int i = 0; i < n; ++i){
+    String s = WiFi.SSID(i);
+    ID = s.c_str();
+
+    if(strcmp(ssid, ID) == 0)
+      exist = true;
+
+    Serial.printf("%d : %s ",i + 1, ID);
+    Serial.printf(" (%ld)",WiFi.RSSI(i));
+    Serial.println((WiFi.encryptionType(i) == ENC_TYPE_NONE)?" ":"*");
+    delay(10);
+  }
+  Serial.println();
+  return exist;
+}
+
+void connectSSID(const char *ssid,const char *password){
+  Serial.printf("Connecting to %s\n", ssid);
+
+  //WiFi.setOutputPower(0);
+  WiFi.begin(ssid, password);
+   
+  while(WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
+  }
+
+  Serial.println("\nWiFi connected");
+  Serial.printf("IP address: ");
+  Serial.println(WiFi.localIP());
 }

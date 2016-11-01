@@ -13,22 +13,21 @@
 #define D6  12
 #define D7  13
 #define D8  15
-#define D9  3
-#define D10 1
 
-#define RSV A0    //In my situation, arduino take RSV pin (just near by A0) as ADC pin, this case was brief by ESP8266 data sheet
+
+#define RSV               A0    //In my situation, arduino take RSV pin (just near by A0) as ADC pin, this case was brief by ESP8266 data sheet
 #define A0_internat_value 6
 
-
-#define DHT11_PIN         D6      //Use D6 pin conecct DHT11
+#define PH_POWER          D1 //Use D1 as photoresistor supply voltage
+#define WL_POWER          D5 //Use D2 as water level sensor supply voltage
+#define LED               D6
+#define DHT11_PIN         D7      //Use D7 pin conecct DHT11
 #define PHOTO_PIN         RSV     //Photoresistor and water level sensor share the pin of RSV
 #define WATER_LEVEL_PIN   RSV     
 
+
 //Because the RSV pin is shared by 2 sensor, so the sensors has to use GPIO as supply
 //RSV can collect each data by taking round of power on the sensor
-#define  PH_POWER  D1 //Use D1 as photoresistor supply voltage
-#define  WL_POWER  D5 //Use D5 as water level sensor supply voltage
-#define  LED       D3
 
 #define BAUDRATE 115200
 

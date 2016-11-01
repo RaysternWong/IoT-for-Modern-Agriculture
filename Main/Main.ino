@@ -1,3 +1,4 @@
+
 #include <SoftwareSerial.h>
 #include <ESP8266WiFi.h>
 #include "ThingSpeak.h"
@@ -37,20 +38,22 @@ WiFiClient  client;
 void setup() {
   Serial.begin(BAUDRATE);
   delay(10);
-   connectToWifi(ssid,password); //You might want to use WiFi.mode(WIFI_STA) to set your esp's wifi to station mode , I set it in AT command due to required of ESPressif Based firmware
+  connectToWifi(ssid,password); //You might want to use WiFi.mode(WIFI_STA) to set your esp's wifi to station mode , I set it in AT command due to required of ESPressif Based firmware
 
-  //pinMode(LED_BUILTIN, OUTPUT);
+/*
+  pinMode(LED_BUILTIN, OUTPUT); //Blink LED for indicate WiFi is connected 
+  delay(1000);
+  pinMode(LED_BUILTIN, INPUT);  
   pinMode( PH_POWER, OUTPUT );
   pinMode( WL_POWER, OUTPUT );
   pinMode( LED, OUTPUT );
- 
-  //delay(1000);
-  //pinMode(LED_BUILTIN, INPUT);
-  ThingSpeak.begin(client);
+  
+  ThingSpeak.begin(client);*/
   Serial.println("\n");
 }
 
 void loop(){
+  /*
   float temperature = 0, humidity = 0;
   int illuminance = 0, waterLevel = 0;
 
@@ -85,4 +88,5 @@ void loop(){
 
   Serial.println("ThingSpeak only accept updates every 15 seconds, please wait for next update\n\n");
   delay(13000);  // Due to read LED brighntess need 3 second, so set the delay value as 13 second
+  */
 }

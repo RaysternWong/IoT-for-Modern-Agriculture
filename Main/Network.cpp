@@ -1,8 +1,14 @@
+#include <ESP8266WiFi.h>
 #include "Network.h"
 #include <SoftwareSerial.h>
 #include <ESP8266WiFi.h>
 
 void connectToWifi(const char *ssid,const char *password){  
+  // Set WiFi to station mode and disconnect from an AP if it was previously connected
+  WiFi.mode(WIFI_STA);
+  WiFi.disconnect();
+  delay(100);
+  
   if(scanSSID(ssid) == true){
     Serial.printf("%s is found, if the connection time is too long, then you might have wrong password\n\n", ssid);
   }else{
@@ -36,13 +42,16 @@ bool scanSSID(const char *ssid){
 }
 
 void connectSSID(const char *ssid,const char *password){
+  
   Serial.printf("Connecting to %s\n", ssid);
+
   WiFi.begin(ssid, password);
    
-  while (WiFi.status() != WL_CONNECTED) {
+  while(WiFi.status() != WL_CONNECTED) {
     delay(500);
     Serial.print(".");
   }
+
   Serial.println("\nWiFi connected");
   Serial.printf("IP address: ");
   Serial.println(WiFi.localIP());
