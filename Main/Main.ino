@@ -1,5 +1,6 @@
 #include <SoftwareSerial.h>
 #include <ESP8266WiFi.h>
+#include <SimpleDHT.h>
 #include "ThingSpeak.h"
 #include "DHT.h"
 #include "Server.h"
@@ -24,9 +25,8 @@ const char *operationRead  = "RJI8HKEATJP2H5EM";
 const char* ssid = "WongIoT";
 const char* password = "nodemcu888";
 
-DHT dht(D7, DHT11,15); //Using D7 as receive pin, snesor type is DHT11, byte count is 15
-
 WiFiClient  client;
+SimpleDHT11 dht11;
 
 void setup() {
   Serial.begin(BAUDRATE);
@@ -36,20 +36,19 @@ void setup() {
   pinMode( PH_POWER, OUTPUT );
   pinMode( WL_POWER, OUTPUT );
   pinMode( LED, OUTPUT );
-  
+
   ThingSpeak.begin(client);
   Serial.println("\n");
 }
 
 void loop(){
-  float temperature = 0, humidity = 0;
+  byte temperature = 0, humidity = 0;
   int illuminance = 0, waterLevel = 0;
 
   illuminance = readBrightness(PHOTO_PIN);
   waterLevel  = readWaterLevel(WATER_LEVEL_PIN);
-  temperature = dht.readTemperature(); //In celcius(°C)
-  humidity    = dht.readHumidity();    //is return Relative Humidity, in percent(%)
-  
+  dht11.read(DHT11_PIN, &temperature, &humidity, NULL);
+
   Serial.print("Temperature              : ");
   Serial.print(temperature);
   Serial.println(" celcius");
@@ -61,18 +60,17 @@ void loop(){
   Serial.printf("Illuminance (Brightness) : %d Lux\n", illuminance);
   Serial.printf("Water level (Millimeter) : %d mm\n\n", waterLevel);
 
-  ThingSpeak.setField(1, temperature);
-  ThingSpeak.setField(2, humidity);
+  Serial.println("Writting data to ThingSpeak......");
+  ThingSpeak.setField(1, (int)temperature);
+  ThingSpeak.setField(2, (int)humidity);
   ThingSpeak.setField(3, illuminance);
   ThingSpeak.setField(4, waterLevel);
-
-  Serial.println("Writting data to ThingSpeak......");
   ThingSpeak.writeFields(monitorChannel, monitorWrite);  
 
   Serial.println("Reading brightness control from ThingSpeak......");
   int ledBrightness = ThingSpeak.readFloatField(operationChannel, 1);
+  
   Serial.printf("Set LedBrightness to     : %d Lux\n", ledBrightness);
-   
   ledBrightness = map(ledBrightness, 0, 35000, 0, 255);
   analogWrite(LED, ledBrightness);
 
