@@ -44,7 +44,7 @@ void connectToWifi(const char *ssid,const char *password){
 bool scanSSID(const char *ssid){
   bool exist = false;
   const char *ID;
-  Serial.println("scan start");
+  Serial.println("\nscan start");
 
   int n = WiFi.scanNetworks();  // WiFi.scanNetworks will return the number of networks found
   Serial.printf("scan done, %d networks found\n", n);

@@ -1,4 +1,3 @@
-
 #include <SoftwareSerial.h>
 #include <ESP8266WiFi.h>
 #include "ThingSpeak.h"
@@ -21,15 +20,9 @@ unsigned long operationChannel = 171780;
 const char *operationWrite = "XY2RZA5HK5ADFW2F"; 
 const char *operationRead  = "RJI8HKEATJP2H5EM"; 
 
-//const char* ssid = "AceJocker";
-//const char* password = "jocker233";
-
-const char* ssid = "familywong88";
-const char* password = "72680384";
-
-
-//const char* ssid = "TARUC Wireless";
-//const char* password = "";
+//( TARUC Wireless ) ,( AceJocker , jocker233) , ( WongIoT , nodemcu888 ) , ( familywong88 , 72680384 )
+const char* ssid = "WongIoT";
+const char* password = "nodemcu888";
 
 DHT dht(D7, DHT11,15); //Using D7 as receive pin, snesor type is DHT11, byte count is 15
 
@@ -38,22 +31,17 @@ WiFiClient  client;
 void setup() {
   Serial.begin(BAUDRATE);
   delay(10);
-  connectToWifi(ssid,password); //You might want to use WiFi.mode(WIFI_STA) to set your esp's wifi to station mode , I set it in AT command due to required of ESPressif Based firmware
-
-/*
-  pinMode(LED_BUILTIN, OUTPUT); //Blink LED for indicate WiFi is connected 
-  delay(1000);
-  pinMode(LED_BUILTIN, INPUT);  
+  connectToWifi(ssid,password); 
+  BLINK_INTERNAL_LED;
   pinMode( PH_POWER, OUTPUT );
   pinMode( WL_POWER, OUTPUT );
   pinMode( LED, OUTPUT );
   
-  ThingSpeak.begin(client);*/
+  ThingSpeak.begin(client);
   Serial.println("\n");
 }
 
 void loop(){
-  /*
   float temperature = 0, humidity = 0;
   int illuminance = 0, waterLevel = 0;
 
@@ -77,6 +65,8 @@ void loop(){
   ThingSpeak.setField(2, humidity);
   ThingSpeak.setField(3, illuminance);
   ThingSpeak.setField(4, waterLevel);
+
+  Serial.println("Writting data to ThingSpeak......");
   ThingSpeak.writeFields(monitorChannel, monitorWrite);  
 
   Serial.println("Reading brightness control from ThingSpeak......");
@@ -88,5 +78,4 @@ void loop(){
 
   Serial.println("ThingSpeak only accept updates every 15 seconds, please wait for next update\n\n");
   delay(13000);  // Due to read LED brighntess need 3 second, so set the delay value as 13 second
-  */
 }
