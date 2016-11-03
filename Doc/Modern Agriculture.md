@@ -29,8 +29,7 @@ Let the robots go haverst your crops after they growth
 
 With IoT technology, modern agriculture is performing efficieny and without permanent human force.
 
-
-
+>The briefing I give above is based on real industry purpose. For my firmware only monitor the data and upload to server.
 
 
 
