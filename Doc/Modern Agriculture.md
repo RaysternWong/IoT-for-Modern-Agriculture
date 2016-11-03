@@ -1,14 +1,13 @@
 
 ![alt text](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Agriculture%20with%20IoT.png)
 
-On of the famous application of IoT is environment monitoring, usually we would like to monitor the basic data like temperature, humidity or air quality, if there is any changed so that we can known and take action immediately.
+The famous category of IoT application is environment monitoring, agriculture with IoT is belong this category,
+usually we would like to known the basic environment data like temperature, humidity or air quality, and then famers would also like to known soil (pH value or moisture), sun light (brightness) and rain (density). 
 
-IoT of agriculture is belong to environment monitong applicatoin, without the basic three data above, famers would also like to known 
-soil (pH value), sun light brightness and rain density. 
 
-By collecting the real time environment data, the agricultre expert can suggest an automative system to farmers,
+By collecting the real time environment data to server,  agricultre experts can design and suggest an automative, which perform action while the environment situationshave changed.
 
-example the system will perform operation like
+Exmple like
 
 ![alt text](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/agriculture-watering.jpg)
 
