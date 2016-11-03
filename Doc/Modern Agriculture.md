@@ -19,7 +19,9 @@ Turn on LED when sun light is not sufficient (Or some industry wanted crops to d
 ![alt text](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/farming-drones.jpg)
 Active drone to do fertilization if the pH value of soil doesn't meet the condition
 
-![alt text](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/harvest.jpg)
+![alt text][logo]
+
+[logo]:(https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/harvest.jpg)
 Let the robots go haverst your crops after they growth
 
 
