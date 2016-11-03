@@ -14,10 +14,9 @@ example the system will perform operation like
 
 Turn on watering machine while humidity is low
 
-![alt text](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/LED_lighting_in_agriculture-667x328.jpg)
+  ![alt text](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/LED_lighting_in_agriculture-667x328.jpg)
 
 Turn on LED when sun light is not sufficient (Or some industry wanted crops to do photosynthesis at night too)
-
 
 ![alt text](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/farming-drones.jpg)
 
