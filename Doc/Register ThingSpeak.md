@@ -14,5 +14,8 @@
     You can choose to mark you channel be public, so everyone can see you data from your channel's public view. Or put in the link and         video to introduce your channel.
     
     ![](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/thingSpeak/Create%20new%20channel.PNG)
+    
+    After finish your channel setting, click "save channel button"
  - - - -
+
    
