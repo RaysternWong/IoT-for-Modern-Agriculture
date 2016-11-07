@@ -1,7 +1,6 @@
 
 
 1. Go to https://thingspeak.com/ and sign up an account
-
  - - - -
 2. Click "New Channel" button
 
