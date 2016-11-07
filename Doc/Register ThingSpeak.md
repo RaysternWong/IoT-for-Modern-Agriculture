@@ -1,3 +1,4 @@
+Prepare your server
 
 1. Go to https://thingspeak.com/ and sign up an account
 ---
