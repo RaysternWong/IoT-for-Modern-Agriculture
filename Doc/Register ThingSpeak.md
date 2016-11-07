@@ -7,15 +7,14 @@
 
     ![](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/thingSpeak/ThingSpeak.PNG)
  - - - -
-3. Fill in the channel with title , description and fields, the fields will be uploaded the data that your microcontroller monitoring.
+3. Fill in the channel with title , description and fields, the fields will be uploaded the data that your NodeMCU monitoring.
 
     ![](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/thingSpeak/Create%20new%20channel.PNG)
     
-    You can choose to mark you channel be public, so everyone can see you data from your channel's public view. Or put in the link and         video to introduce your channel.
+    You can choose to mark you channel be public, so everyone visit it from your channel's public view, you can even put in the link and       video to describe your channel.
     
-    ![](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/thingSpeak/Create%20new%20channel.PNG)
+    ![](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/thingSpeak/Make%20public.PNG)
     
-    After finish your channel setting, click "save channel button"
- - - - -
+    After finish your channel setting, click "save channel button" to accomplish your server.
 
    
