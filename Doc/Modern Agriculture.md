@@ -10,7 +10,7 @@ By collecting the real time environment data to server,  agricultre experts can 
 Exmple like
 
 1. Turn on watering machine while humidity is low
-   ![alt text](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Agriculture/agriculture-watering.jpg)
+   ![alt text](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Agriculture/agriculture-watering.jpg =250x250)
 
 2. Turn on LED when sun light is not sufficient (Or some industry wanted crops to do photosynthesis at night too)
    ![alt text](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Agriculture/LED_lighting_in_agriculture-667x328.jpg)
