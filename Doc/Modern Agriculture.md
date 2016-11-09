@@ -21,8 +21,9 @@ Exmple like
      <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Agriculture/farming-drones.jpg" height="100%" width="100%">
    
 
-4. Let the robots go haverst your crops after they growth                                                         
-   ![alt text](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Agriculture/harvest.jpg)
+4. Let the robots go haverst your crops after they growth       
+   <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Agriculture/harvest.jpg" hieght="100%" width="100%">
+  
 
 With IoT technology, modern agriculture is performing efficieny and without permanent human force.
 
