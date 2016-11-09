@@ -21,7 +21,7 @@ By collecting the real time environment data to server,  agricultre experts can 
      <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Agriculture/farming-drones.jpg" height="75%" width="75%">
 <hr/>
 4. Let the robots go haverst your crops after they growth
-   <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Agriculture/harvest.jpg" align="center" height="75%" width="75%">
+   <img align="center" src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Agriculture/harvest.jpg"  height="75%" width="75%">
   
 
 With IoT technology, modern agriculture is performing efficieny and without permanent human force.
