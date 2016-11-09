@@ -12,7 +12,7 @@ By collecting the real time environment data to server,  agricultre experts can 
 <h3>Exmple like</h3>
 
 1. Turn on watering machine while humidity is low
-   <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Agriculture/agriculture-watering.jpg" align="center" height="75%" width="75%" >
+   <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Agriculture/agriculture-watering.jpg" align="middle" height="75%" width="75%" >
 <hr/>
 2. Turn on LED when sun light is not sufficient (Or some industry wanted crops to do photosynthesis at night too)
    <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Agriculture/LED_lighting_in_agriculture-667x328.jpg" align="center" height="75%" width="75%" >
@@ -21,7 +21,7 @@ By collecting the real time environment data to server,  agricultre experts can 
      <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Agriculture/farming-drones.jpg" height="75%" width="75%">
 <hr/>
 4. Let the robots go haverst your crops after they growth
-   <img align="center" src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Agriculture/harvest.jpg"  height="75%" width="75%">
+   <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Agriculture/harvest.jpg"  height="75%" width="75%">
   
 
 With IoT technology, modern agriculture is performing efficieny and without permanent human force.
