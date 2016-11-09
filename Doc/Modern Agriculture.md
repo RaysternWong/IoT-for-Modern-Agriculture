@@ -18,8 +18,7 @@ Exmple like
 3. Active drone to do fertilization if the pH value of soil doesn't meet the condition
    ![alt text](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Agriculture/farming-drones.jpg)
 
-4. Let the robots go haverst your crops after they growth
-
+4. Let the robots go haverst your crops after they growth                                                         
    ![alt text](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Agriculture/harvest.jpg)
 
 With IoT technology, modern agriculture is performing efficieny and without permanent human force.
