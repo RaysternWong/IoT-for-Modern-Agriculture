@@ -7,7 +7,7 @@ The famous category of IoT application is environment monitoring, agriculture wi
 usually we would like to known the basic environment data like temperature, humidity or air quality, and then famers would also like to known soil (pH value or moisture), sun light (brightness) and rain (density). 
 </article>
 
-->By collecting the real time environment data to server,  agricultre experts can design and suggest an automative, which perform action while the environment situationshave changed.<-
+By collecting the real time environment data to server,  agricultre experts can design and suggest an automative, which perform action while the environment situationshave changed.
 
 <h3>Exmple like</h3>
 
