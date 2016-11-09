@@ -11,8 +11,7 @@ Exmple like
 
 1. Turn on watering machine while humidity is low    
    <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Agriculture/agriculture-watering.jpg" height="75%" width="75%" >
-
-
+<hr/>
 2. Turn on LED when sun light is not sufficient (Or some industry wanted crops to do photosynthesis at night too)
    <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Agriculture/LED_lighting_in_agriculture-667x328.jpg" height="75%" width="75%" >
  
