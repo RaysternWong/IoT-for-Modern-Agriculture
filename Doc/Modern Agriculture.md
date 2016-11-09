@@ -2,9 +2,10 @@
 <h1> How does IoT involded in Modern Agriculture </h1>
 <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Agriculture/Agriculture%20with%20IoT.png" alt="iot of agriculture" height="100%" width="100%">
 
+<article>
 The famous category of IoT application is environment monitoring, agriculture with IoT is belong this category,
 usually we would like to known the basic environment data like temperature, humidity or air quality, and then famers would also like to known soil (pH value or moisture), sun light (brightness) and rain (density). 
-
+</article>
 
 By collecting the real time environment data to server,  agricultre experts can design and suggest an automative, which perform action while the environment situationshave changed.
 
