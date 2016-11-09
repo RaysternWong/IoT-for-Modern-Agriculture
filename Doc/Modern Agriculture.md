@@ -9,7 +9,7 @@ usually we would like to known the basic environment data like temperature, humi
 
 By collecting the real time environment data to server,  agricultre experts can design and suggest an automative, which perform action while the environment situationshave changed.
 
-Exmple like
+<h3>Exmple like</h3>
 
 <b>1. Turn on watering machine while humidity is low</b>    
    <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Agriculture/agriculture-watering.jpg" height="75%" width="75%" >
