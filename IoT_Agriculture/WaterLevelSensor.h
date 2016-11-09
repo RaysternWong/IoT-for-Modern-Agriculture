@@ -3,5 +3,4 @@
 
 int readWaterLevel(int pinNum); 
 
-
 #endif // WaterLevelSensor_H

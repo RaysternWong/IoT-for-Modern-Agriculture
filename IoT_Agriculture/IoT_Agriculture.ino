@@ -2,28 +2,17 @@
 #include <ESP8266WiFi.h>
 #include <SimpleDHT.h>
 #include "ThingSpeak.h"
-#include "DHT.h"
-#include "Server.h"
 #include "Network.h"
 #include "Setting.h"
 #include "Photoresistor.h"
 #include "WaterLevelSensor.h"
 
-unsigned long monitorChannel = 169688;
-const char *monitorWrite = "GB91TIAKXFPD6JNX"; //The Key for write data to channel
-const char *monitorRead  = "0N7QYR503X9K51FA"; //The Key for read data from channel
+unsigned long monitorChannel = 0 ;  // Replace 0 with your monitor channel ID
+const char *monitorWrite = "";      // Type in your write api key inside ""
+const char *monitorRead  = "";      // Type in your read api key inside ""
 
-unsigned long analysisChannel = 171094;
-const char *analysisWrite = "4JCJEWOPSIBJHMV2"; 
-const char *analysisRead  = "S0Z31XZI8CHT9JDQ"; 
-
-unsigned long operationChannel = 171780;
-const char *operationWrite = "XY2RZA5HK5ADFW2F"; 
-const char *operationRead  = "RJI8HKEATJP2H5EM"; 
-
-//( TARUC Wireless ) ,( AceJocker , jocker233) , ( WongIoT , nodemcu888 ) , ( familywong88 , 72680384 )
-const char* ssid = "WongIoT";
-const char* password = "nodemcu888";
+const char* ssid = "";              // Type in your ssid inside ""
+const char* password = "";          // Type in your password inside "", if doesn't has just leave it blank
 
 WiFiClient  client;
 SimpleDHT11 dht11;
@@ -32,10 +21,9 @@ void setup() {
   Serial.begin(BAUDRATE);
   delay(10);
   connectToWifi(ssid,password); 
-  BLINK_INTERNAL_LED;
+  BLINK_INTERNAL_LED;           //Blink for indicate WiFI is connected
   pinMode( PH_POWER, OUTPUT );
   pinMode( WL_POWER, OUTPUT );
-  pinMode( LED, OUTPUT );
 
   ThingSpeak.begin(client);
   Serial.println("\n");
@@ -67,13 +55,6 @@ void loop(){
   ThingSpeak.setField(4, waterLevel);
   ThingSpeak.writeFields(monitorChannel, monitorWrite);  
 
-  Serial.println("Reading brightness control from ThingSpeak......");
-  int ledBrightness = ThingSpeak.readFloatField(operationChannel, 1);
-  
-  Serial.printf("Set LedBrightness to     : %d Lux\n", ledBrightness);
-  ledBrightness = map(ledBrightness, 0, 35000, 0, 255);
-  analogWrite(LED, ledBrightness);
-
   Serial.println("ThingSpeak only accept updates every 15 seconds, please wait for next update\n\n");
-  delay(13000);  // Due to read LED brighntess need 3 second, so set the delay value as 13 second
+  delay(17000);  //Wait 17 sec for safe
 }
