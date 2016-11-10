@@ -19,5 +19,5 @@ c. [My Task channel](https://thingspeak.com/channels/171780)  <br/>
 7. [Flash my firmware](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Flash%20my%20firmware.md)
 
 <h3>Regard</h3>
-This project is welcome anyone to copy, modify and publish.
+This project is welcome anyone to copy, modify and publish.<br/>
 See the [LICENSE](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/LICENSE) file for license rights and limitations (MIT).
