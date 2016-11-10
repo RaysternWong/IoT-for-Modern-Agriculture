@@ -1,6 +1,6 @@
 # IoT-of-Modern-Agriculture
 
-If you are doing self farming and you would like to monitor your farm by using IoT technology, this firmware is implemented for monitoring environmenet data of temperature, humidity, brighntess and rain density. You are welcome to take my firmware but it is not sufficient for industry purpose. I will explain how to use and improve it .
+If you are doing self farming and you would like to monitor your farm by using IoT technology, this firmware is implemented for monitoring environmenet data of temperature, humidity, brighntess and rain density. I will explain how to use and improve it, and you are welcome to take my firmware but it is not sufficient for industry purpose.  
 
 Using ThingSpeak as data collecting and analysis server
 
@@ -21,4 +21,5 @@ https://thingspeak.com/channels/171780
 6. [Setup Arduino](https://github.com/Raydivine/NodeMCU-with-IoT-practice/blob/master/Tutorial/NodeMCU%20Arduino%20Setting.md)
 7. [Flash my firmware](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Flash%20my%20firmware.md)
 
+This project is welcome anyone to copy, modify and publish.
 See the [LICENSE](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/LICENSE) file for license rights and limitations (MIT).
