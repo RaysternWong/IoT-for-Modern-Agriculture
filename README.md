@@ -5,14 +5,10 @@ If you are doing self farming and you would like to monitor your farm by using I
 <h2>Server</h2>
 Using ThingSpeak as data monitoring , analysis and task server
 
-My Monitoring channel
-https://thingspeak.com/channels/169688
+[My Monitoring channel](https://thingspeak.com/channels/169688)
+[My Analysis   channel](https://thingspeak.com/channels/171094)
+[My Task       channel](https://thingspeak.com/channels/171780)
 
-My Analysis channel
-https://thingspeak.com/channels/171094
-
-My Task channel
-https://thingspeak.com/channels/171780
 
 <h2>Content</h2>
 1. [IoT ( Internet of things)](https://en.wikipedia.org/wiki/Internet_of_things)
