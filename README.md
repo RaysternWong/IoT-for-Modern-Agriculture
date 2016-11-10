@@ -13,7 +13,7 @@ https://thingspeak.com/channels/171094
 Operation channel
 https://thingspeak.com/channels/171780
 
-<h2><ins>Content</ins><h2>
+<h2><ins>Content</ins></h2>
 1. [IoT ( Internet of things)](https://en.wikipedia.org/wiki/Internet_of_things)
 2. [How does IoT involved in modern agriculture ](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Modern%20Agriculture.md)
 3. [Component](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Component.md)
