@@ -32,7 +32,7 @@ void setup() {
   Serial.begin(BAUDRATE);
   delay(10);
   connectToWifi(ssid,password); 
-  BLINK_INTERNAL_LED;
+  BLINK_INTERNAL_LED;           //Blink LED for indicate WiFi is connected
   pinMode( PH_POWER, OUTPUT );
   pinMode( WL_POWER, OUTPUT );
   pinMode( LED, OUTPUT );
