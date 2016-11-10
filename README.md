@@ -22,4 +22,4 @@ c. [My Task channel](https://thingspeak.com/channels/171780)  <br/>
 This project is welcome anyone to copy, modify and publish.<br/>
 See the [LICENSE](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/LICENSE) file for license rights and limitations (MIT).
 
-<i>For fresh IoT learners, I am welcome you to ask any question by create an issue on my repo (I will answer you as I get my email reminded), but I am only known to implement in Arduino IDE, if you are using LUA please go to [ESP8266 Community Forum](http://www.esp8266.com/index.php?sid=7377269ab4c35f67c420ac8a88e5aeb3)</i>
+<i>For NodeMCU learners who using Arduino, it is good that you look for help from[official esp82666's arduino framework developer](https://github.com/esp8266/Arduino) repo, there is larger number of member which can answer your question rapidly. For me, you are welcome to ask any question by create an issue (I will answer you as I get my email reminded). If you are using LUA please go to [ESP8266 Community Forum](http://www.esp8266.com/index.php?sid=7377269ab4c35f67c420ac8a88e5aeb3)</i> to look for help.
