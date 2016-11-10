@@ -1,10 +1,10 @@
 <h1><ins>Build your device</ins></h1>
 
 <h4> Nodemcu Pin </h4>
-<img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Data/NodeMCU%20Pin%20Map.png" />
+<img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Data/NodeMCU%20Pin%20Map.png" height="100%" width="100%" />
 
 <h4> This is how the circuit look like </h4>
-   <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Resources/circuit%20diagram.PNG" alt="circuit" />
+   <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Resources/circuit%20diagram.PNG" alt="circuit" height="100%" width="100%"/>
 
 1. As long the as USB power is connected, NodeMCU can support 3V output voltage from 3V3 pin, or 5V voltage from Vin pin. For make our life simple, just power the device with micro usb charger, rather than go prepare an external power supply.
 2. Connect 3V3 pin or Vin pin to your VCC, and GND pin to ground.
@@ -20,7 +20,7 @@ And then, this ADC pins only can read the voltage range from 0V to 1V, so you ha
 (Transistor switch is not comfortable use in this case due to there is 0.7 bias voltage)
 
 <h6> My circuit device </h6>
- <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Resources/My%20Circuit.jpg" />
+ <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Resources/My%20Circuit.jpg" height="100%" width="100%"/>
  
  
  
