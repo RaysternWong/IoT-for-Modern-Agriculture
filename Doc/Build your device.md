@@ -2,6 +2,7 @@
 <h4><i># You need to have basic circuiting knowledge to construct your device</i></h4>
 
 <h3><ins>Nodemcu Pin Map</ins></h3>
+Please have a look of the nodeMCU pin map before start to build the circuit
 <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Data/NodeMCU%20Pin%20Map.png" height="75%" width="75%" />
 <hr/>
 <h3><ins>Circuit Diagram</ins></h3>
