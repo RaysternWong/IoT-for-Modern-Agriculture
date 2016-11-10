@@ -24,8 +24,8 @@ And then, this ADC pin can only read voltage range from 0V to 1V, so you have to
 <h3><ins>My circuit look like</ins></h3>
  <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Resources/My%20Circuit.jpg" height="75%" width="75%"/>
 <hr/>
-<h3><ins>Take note</ins></h3> 
-a. [Power on NodeMCU](http://henrysbench.capnfatz.com/henrys-bench/arduino-projects-tips-and-more/powering-the-esp-12e-nodemcu-development-board/)                                                                                
+<h3><ins>Take note</ins></h3>
+a. [Power on NodeMCU](http://henrysbench.capnfatz.com/henrys-bench/arduino-projects-tips-and-more/powering-the-esp-12e-nodemcu-development-board/)<br/>
 As long the as USB power is connected, NodeMCU can supply 3V output voltage from 3V3 pin, or 5V voltage from Vin pin. To make our life simple, just power the device with micro usb charger, then choose 3v3 pin or Vin pin as your Vdd.
 
 b. [ADC pin issue](https://github.com/nodemcu/nodemcu-firmware/blob/master/docs/en/modules/adc.md)                                      
