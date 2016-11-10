@@ -1,8 +1,6 @@
 # IoT-of-Modern-Agriculture
 
-First of all, if you are doing a simple self farming, and you would like to monitor your farm by using IoT technology, this repo is provided the IoT controller's firmware based on simple agricultre monitoring purpose, and I will explain how to use and improve it.
-You are welcome to take my firmware but it is not sufficient for real industry purpose. 
-See the LICENSE file for license rights and limitations (MIT).
+If you are doing self farming and you would like to monitor your farm by using IoT technology, this firmware is implemented for monitoring environmenet data of temperature, humidity, brighntess and rain density. You are welcome to take my firmware but it is not sufficient for industry purpose. I will explain how to use and improve it , see the [LICENSE](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/LICENSE) file for license rights and limitations (MIT).
 
 
 
