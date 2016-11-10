@@ -8,7 +8,7 @@ Using ThingSpeak as data monitoring , analysis and task server <br/>
 a. [My Monitoring channel](https://thingspeak.com/channels/169688) <br/>
 b. [My Analysis channel](https://thingspeak.com/channels/171094)  <br/>
 c. [My Task channel](https://thingspeak.com/channels/171780)  <br/>
-
+( I am not always updating my channel)
 <h3>Content</h3>
 1. [IoT ( Internet of things)](https://en.wikipedia.org/wiki/Internet_of_things)
 2. [How does IoT involved in modern agriculture ](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Modern%20Agriculture.md)
