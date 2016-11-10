@@ -16,8 +16,8 @@ And then, this ADC pin can only read voltage range from 0V to 1V, so you have to
 1. Prepare a micro-usb charger or cabel for supply power to your NodeMCU.
 2. Connect 3V3 pin or Vin pin to your VCC, and GND pin to ground.
 3. Connect DHT11's data pin to D7, GND for ground and VCC for VCC.
-4. Connect water level sensour '+'pin to D5, '-'pin to ground, 's' pin to 100 ohms -> 80 ohms -> ground.
-5. Connect photoresistor to D1 and the opposite to 10k ohms -> ground , from the between, connect to 2k ohms-> 1k ohms -> ground.
+4. Connect water level sensour '+'pin to D5, '-'pin to ground, 's' pin to 100Ω -> 80Ω -> ground.
+5. Connect photoresistor to D1 and the opposite to 10k ohms -> ground , from the between, connect to 2kΩ-> 1kΩ -> ground.
 6. Connect RSV pin to the the middle of resistors as diagram shown above.
 <hr/>
 <h3><ins>My circuit look like</ins></h3>
