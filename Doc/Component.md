@@ -1,5 +1,5 @@
 <h1> The components used in this project </h1>
-<h4># You need to have basic circuiting knowledge in order to construct your device</h4>
+<h4><i># You need to have basic circuiting knowledge in order to construct your device</i></h4>
 
 <h4> 1. NodeMCU WiFi Module (ESP8266-12E) </h4>
 <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Resources/Nodemcu.jpg" alt="NodeMCU" height="60%" width="60%"/>
