@@ -16,5 +16,8 @@
     ![](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/thingSpeak/Make%20public.PNG)
     
     After finish your channel setting, click "save channel button" to accomplish your server.
+<hr/>
+4. Go to API keys tab, record your channel ID, api write & read for next step use
 
+<img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/thingSpeak/channle%20id%20and%20write%20key.PNG"/>
    

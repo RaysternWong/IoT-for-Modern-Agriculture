@@ -15,9 +15,10 @@ https://thingspeak.com/channels/171094
 Operation channel
 https://thingspeak.com/channels/171780
 
-
-1. [My circuit device](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Resources/My%20Circuit.jpg)
+1. IoT ( Internet of things)
 2. [How does IoT involved in modern agriculture ](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Modern%20Agriculture.md)
-3. [Register ThingSpeak](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Register%20ThingSpeak.md)
-4. [Set up Arduino](https://github.com/Raydivine/NodeMCU-with-IoT-practice/blob/master/Tutorial/NodeMCU%20Arduino%20Setting.md)
+3. [Component](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Component.md)
+4. [Build device](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Build%20your%20device.md)
+5. [Setup server](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Register%20ThingSpeak.md)
+6. [Setup Arduino](https://github.com/Raydivine/NodeMCU-with-IoT-practice/blob/master/Tutorial/NodeMCU%20Arduino%20Setting.md)
 
