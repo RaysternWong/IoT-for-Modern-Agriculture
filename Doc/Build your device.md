@@ -14,10 +14,10 @@
 6. Connect RSV pin to the the middle of resistors as diagram shown above.
 
 <h2><ins>Why the circuit like this?</ins></h2>
-Nodemcu has only 1 (ADC)(https://learn.sparkfun.com/tutorials/esp8266-thing-hookup-guide/using-the-arduino-addon) pin, which can read the range of voltage, for non ADC pins only can read either high or either low.
-In order to read the value of brightness and water level, this 2 sensor has to been [power control](http://www.instructables.com/id/ESP8266-with-Multiple-Analog-Sensors/) by nodeMCU output pin, so when one data is reading another is off for prevent mixed.
-And then, this ADC pins only can read the voltage range from 0V to 1V, so you have to scale down the sensor output to 1V range.
-(Transistor switch is not comfortable use in this, because there is 0.7 bias voltage)
+Nodemcu has only 1 [ADC](https://learn.sparkfun.com/tutorials/esp8266-thing-hookup-guide/using-the-arduino-addon) pin, which can read the voltage value, for non ADC pins can only read high or low.
+In order to read the value of brightness and water level, this 2 sensor has to been [power control](http://www.instructables.com/id/ESP8266-with-Multiple-Analog-Sensors/) by nodeMCU output pin, when one sensor is on another should be off.
+And then, this ADC pins only can read the voltage range from 0V to 1V, so you have to scale down the sensor's output to 1V by using voltage divider circuit.
+(Transistor switch is not comfortable use in this case due to there is 0.7 bias voltage)
 
 <h6> My circuit device </h6>
  <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Resources/My%20Circuit.jpg" />
