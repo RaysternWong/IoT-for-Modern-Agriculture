@@ -4,7 +4,7 @@
 If you are doing self farming and you would like to monitor your farm by using IoT technology, this firmware is implemented for monitoring environmenet data of temperature, humidity, brightness and rain density. I will explain how to use and improve it, you are welcome to take my firmware but it is not sufficient for industry purpose.  
 
 <h3>Server</h3>
-Using ThingSpeak as data monitoring , analysis and task server
+Using ThingSpeak as data monitoring , analysis and task server <br/>
 [My Monitoring channel](https://thingspeak.com/channels/169688) <br/>
 [My Analysis channel](https://thingspeak.com/channels/171094)  <br/>
 [My Task channel](https://thingspeak.com/channels/171780)  <br/>
