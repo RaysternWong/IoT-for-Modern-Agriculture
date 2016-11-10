@@ -25,8 +25,9 @@ And then, this ADC pin can only read voltage range from 0V to 1V, so you have to
  <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Resources/My%20Circuit.jpg" height="75%" width="75%"/>
 <hr/>
 <h3><ins>Take note</ins></h3> 
-a. As long the as USB power is connected, NodeMCU can support 3V output voltage from 3V3 pin, or 5V voltage from Vin pin. For make our life simple, just power the device with micro usb charger, rather than go prepare an external power supply.                       
-b.[ADC pin issue](https://github.com/nodemcu/nodemcu-firmware/blob/master/docs/en/modules/adc.md)                                      
+a. [Power on NodeMCU](http://henrysbench.capnfatz.com/henrys-bench/arduino-projects-tips-and-more/powering-the-esp-12e-nodemcu-development-board/)
+As long the as USB power is connected, NodeMCU can supply 3V output voltage from 3V3 pin, or 5V voltage from Vin pin. To make our life simple, just power the device with micro usb charger, then choose 3v3 pin or Vin pin as your Vdd.
+b. [ADC pin issue](https://github.com/nodemcu/nodemcu-firmware/blob/master/docs/en/modules/adc.md)                                      
 In my case, analogRead(A0) understand the RSV pin as A0.I am not sure how does this happen, you may try running analogRead(A0) then apply voltage to A0 pin and RSV pins to find the correct pin refer to.                                                                  
-c.[Prevent using D3,D4,D8 pins](https://github.com/esp8266/Arduino/blob/master/doc/boards.md#boot-messages-and-modes)                   
+c. [Prevent using D3,D4,D8 pins](https://github.com/esp8266/Arduino/blob/master/doc/boards.md#boot-messages-and-modes)                   
 This 3 pins are refer to gpio 0,2,15 which are the setting of nodeMCU boot mode, it is possible that your arduino skectch failed to boot  if any of those pins connected.
