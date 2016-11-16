@@ -11,7 +11,7 @@ By collecting the real time environment data to server,  agricultre experts can 
 
 <h3>Exmple like</h3>
 
-1. Turn on watering machine while humidity is low
+1. Turn on  <font color="red">watering</font> watering machine while humidity is low
    <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Agriculture/agriculture-watering.jpg" height="75%" width="75%">
    
 <hr/>
