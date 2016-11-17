@@ -2,8 +2,8 @@
 
 <h2>A nodeMCU firmware for IoT of agriculture application</h2>
 
-<h3>   This is an environment monitoring project by using IoT technology, the monitoring object are temperature, humidity, brightness and rain density. This project is build for investigating how does IoT(Internet of Things) apply in modern agriculture, so it is named as its intend.<h3>
-
+<h3>   This is an environment monitoring project by using IoT technology, the monitoring object are temperature, humidity, brightness and rain density. This project is build for investigating how does IoT(Internet of Things) apply in modern agriculture, so it is named as its intend.</h3>
+<hr/>
  <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Agriculture/self%20farming.jpg" width="45%" height="250px" />  <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Agriculture/farm%20monitor.jpg" width="45%" height="45%" />
 
    If you are doing self farming, and you would like to monitor your farm by using IoT technology, this firmware is implemented for collecting environmenet data of temperature, humidity, brightness and rain density, then upload to the server ((ThingSpeak)[https://thingspeak.com/] ) for monitor and action purpose. 
