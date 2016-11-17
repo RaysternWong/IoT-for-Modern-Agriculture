@@ -20,12 +20,14 @@
    Set the baudrate to 115200, and 'BOTH NL & CR' 
    <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Arduino/Print%20out%20message.PNG"/>
    
-   The message above is printed by my firmware code, every time the board start up, it will scan the target WiFi's SSID first, then only    connect it. This feature is implemented for troubleshoot purpose, if the target SSID cannot be connected, the case can be
-   a. The SSID is not available
-   b. The distance is too long
-   c. The password is wrong
-   d. The SSID its self doesn't has internet connectivity
-   e. The board's WiFi is not working
+   The message above is printed by my firmware code, every time the board start up, it will scan the target WiFi's SSID first, then only    connect it. This feature is implemented for troubleshoot purpose, if the target SSID cannot be connected <br/>
+   
+   <b><ins>The case can be</ins></b>
+   a. The SSID is not available<br/>
+   b. The distance is too long<br/>
+   c. The password is wrong<br/>
+   d. The SSID its self doesn't has internet connectivity<br/>
+   e. The board's WiFi is not working<br/><br/>
    
    By scanning the available WiFi's at beginning can let us identify the situation, if the target SSID is scanned but not connected then    we can known it is belong to case'c' or 'd'. You can remove the WiFi's scan feature if you don't expect to do any troubleshooting.
    
