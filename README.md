@@ -35,8 +35,8 @@ For NodeMCU learners, it is good that you start with arduino due the developing 
 
 If you are using LUA please go to [ESP8266 Community Forum](http://www.esp8266.com/index.php?sid=7377269ab4c35f67c420ac8a88e5aeb3)</i> to look for help.
 
-This project is welcome anyone to copy, modify and republish.<br/>
-See the [LICENSE](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/LICENSE) file for license rights and limitations (MIT).
+<b>This project is welcome anyone to copy, modify and republish.<br/>
+See the [LICENSE](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/LICENSE) file for license rights and limitations (MIT).</b>
 
 <!--
 <h3>My server</h3>
