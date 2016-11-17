@@ -2,18 +2,18 @@
 
 <h2>A nodeMCU firmware for IoT of agriculture application</h2>
 <i>   This is an environment monitoring project by using IoT technology, the monitoring object are temperature, humidity, brightness and rain density. This project is build for investigating how does IoT(Internet of Things) apply in modern agriculture, so it is named as its intend.</i>
-<hr weight="2px"/>
+<hr/>
 
 <h3>Overview</h3>
 
  <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Agriculture/self%20farming.jpg" width="45%" height="250px" />  <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Agriculture/farm%20monitor.jpg" width="45%" height="45%" />
 
-   If you are doing self farming, and you would like to monitor your farm by using IoT technology, this firmware is implemented for collecting environmenet data of temperature, humidity, brightness and rain density, then upload to the server ((ThingSpeak)[https://thingspeak.com/] ) for monitor and action purpose. 
- 
-   For using this project, you have to a register ThingSpeak account and prepare the resources. The procedure is listed below, by doing it you can monitor your farm environment anywhere 
- 
- The monitoring data is not sufficient I will explain how to use and improve it, you are welcome to take my firmware but it is not sufficient for industry purpose.  
-
+   <i>If you are doing self farming, sometime when you are out of home, or going to travel, there is no body take care your farm, so what to do when your farm need to be watering?</i>
+  
+   By applying IoT technology, you can know your farm condition in 24 hours at anywhere. Let say you found the rain density is too low, you can send a HTTP request from your server (or let it be automatic) to activate an watering machine, or turn on LED light when  sun light is not sufficient.
+   
+   By right a perfect agriculture monitoring system, the soil moisture , nutrient and air quality data should be monitoring too. Apologize that I could not get those sensors, so they are not implementing in this firmware. I will explain how to use and improve my project, you are welcome to take , modifiy and republish it.
+  
 <h3>Introduction</h3>
 1. [IoT ( Internet of things)](https://en.wikipedia.org/wiki/Internet_of_things)
 2. [How does IoT involved in modern agriculture ](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Modern%20Agriculture.md)
@@ -29,7 +29,7 @@
 8. [Flash my firmware](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Flash%20my%20firmware.md)
 
 <h3>Regard</h3>
-This project is welcome anyone to copy, modify and publish.<br/>
+This project is welcome anyone to copy, modify and republish.<br/>
 See the [LICENSE](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/LICENSE) file for license rights and limitations (MIT).
 <hr/>
 <i>For NodeMCU learners who using Arduino, it is good that you look for help in [esp82666's arduino environment developer](https://github.com/esp8266/Arduino) repo, there is larger number of member which can answer your question rapidly. For me, you are welcome to ask any question by create an issue (I will answer you as I get my email reminded). If you are using LUA please go to [ESP8266 Community Forum](http://www.esp8266.com/index.php?sid=7377269ab4c35f67c420ac8a88e5aeb3)</i> to look for help.
