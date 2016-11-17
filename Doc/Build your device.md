@@ -21,6 +21,7 @@ And then, this ADC pin can only read voltage range from 0V to 1V, so you have to
 5. Connect photoresistor to D1 and the opposite to 10k ohms -> ground , from the between, connect to 2kΩ-> 1kΩ -> ground.
 6. Connect RSV pin to the the middle of resistors as diagram shown above.
 <hr/>
+
 <h3><ins>My circuit look like</ins></h3>
  <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Resources/My%20Circuit.jpg" height="75%" width="75%"/>
 <hr/>
@@ -32,5 +33,5 @@ As long the as USB power is connected, NodeMCU can supply 3V output voltage from
 b. [ADC pin issue](https://github.com/nodemcu/nodemcu-firmware/blob/master/docs/en/modules/adc.md)                                      
 In my case, analogRead(A0) understand the RSV pin as A0.I am not sure how does this happen, you may try running analogRead(A0) then apply voltage to A0 pin and RSV pins to find the correct pin refer to.     
 
-c. [Prevent using D3,D4,D8 pins](https://github.com/esp8266/Arduino/blob/master/doc/boards.md#boot-messages-and-modes)                   
+c. [Avoid using D3,D4,D8 pins](https://github.com/esp8266/Arduino/blob/master/doc/boards.md#boot-messages-and-modes)                   
 This 3 pins are refer to gpio 0,2,15 which are the setting of nodeMCU boot mode, it is possible that your arduino skectch failed to boot  if any of those pins connected.
