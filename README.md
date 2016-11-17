@@ -8,7 +8,7 @@
 
  <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Agriculture/self%20farming.jpg" width="45%" height="250px" />  <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Agriculture/farm%20monitor.jpg" width="45%" height="45%" />
 
-   <i>If you are doing self farming, sometime when you are out of home, or going to travel, there is no body take care your farm, so what to do when your farm need to be watering?</i>
+   <ins><i>If you are doing self farming, sometime when you are out of home, or going to travel, there is no body take care your farm, so what to do when your farm need to be watering?</i></ins>
   
    By applying IoT technology, you can know your farm condition in 24 hours at anywhere. Let say you found the rain density is too low, you can send a HTTP request from your server (or let it be automatic) to activate an watering machine, or turn on LED light when  sun light is not sufficient.
    
