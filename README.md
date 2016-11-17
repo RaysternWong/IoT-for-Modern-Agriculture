@@ -31,12 +31,14 @@ For a perfect agriculture monitoring system, the soil moisture , nutrient and ai
 <h3>Regards</h3>
 
 Appreciate to [the developers](https://github.com/esp8266/Arduino) produce the NodeMCU's arduino framework, it make my life simple.
-For NodeMCU learners, it is good that you start with arduino due the developing environment is friendly, if you face any problem please look for help in their project repo, there is large number of members which can answer your question rapidly. You can ask me question by creating an issue, I will reply you when I get my email reminded.
+For NodeMCU learners, it is good that you start with arduino due the developing environment is friendly, if you face any problem please look for help in their project repo, there is large number of members which can answer your question rapidly.
+
+You can ask me question by creating an issue, I will reply you when I get my email reminded.
 
 If you are using LUA please go to [ESP8266 Community Forum](http://www.esp8266.com/index.php?sid=7377269ab4c35f67c420ac8a88e5aeb3)</i> to look for help.
-
-<i>This project is welcome anyone to copy, modify and republish.<br/>
-See the [LICENSE](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/LICENSE) file for license rights and limitations (MIT).</i>
+<hr/>
+This project is welcome anyone to copy, modify and republish.<br/>
+See the [LICENSE](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/LICENSE) file for license rights and limitations (MIT).
 
 <!--
 <h3>My server</h3>
