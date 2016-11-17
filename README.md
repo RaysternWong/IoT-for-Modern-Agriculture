@@ -10,9 +10,9 @@
 
    <ins><i>If you are doing self farming, sometime when you are out of home, or going to travel, there is no body take care your farm, so what to do when your farm need to be watering?</i></ins>
   
-   By applying IoT technology, you can know your farm condition in 24 hours at anywhere. Let say you found the rain density is too low, you can send a HTTP request from your server (or let it be automatic) to activate an watering machine, or turn on LED light when  sun light is not sufficient.
+By applying IoT technology, you can know your farm condition in 24 hours at anywhere. Let say you found the rain density is too low, you can send a HTTP request from your server (or let it be automatic) to activate an watering machine, or turn on LED light when sun light is not sufficient.
    
-   By right a perfect agriculture monitoring system, the soil moisture , nutrient and air quality data should be monitoring too. Apologize that I could not get those sensors, so they are not implementing in this firmware. I will explain how to use and improve my project, you are welcome to take , modifiy and republish it.
+For a perfect agriculture monitoring system, the soil moisture , nutrient and air quality data are necessary be monitoring too. Apologize that I could not get those sensors, so they are not implementing in this firmware. I will explain how to use and improve my project, you are welcome to take , modifiy and republish it.
   
 <h3>Introduction</h3>
 1. [IoT ( Internet of things)](https://en.wikipedia.org/wiki/Internet_of_things)
