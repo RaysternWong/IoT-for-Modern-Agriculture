@@ -2,7 +2,7 @@
 
 <h2>A nodeMCU firmware for IoT of agriculture application</h2>
 <i>   This is an environment monitoring project by using IoT technology, the monitoring object are temperature, humidity, brightness and rain density. This project is build for investigating how does IoT(Internet of Things) apply in modern agriculture, so it is named as its intend.</i>
-<hr/>
+<hr weight="2px"/>
 
 <h3>Overview</h3>
 
