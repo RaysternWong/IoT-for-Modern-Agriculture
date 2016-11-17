@@ -3,29 +3,30 @@
 <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Agriculture/Agriculture%20with%20IoT.png" alt="iot of agriculture" height="100%" width="100%">
 
 <article>
-The famous category of IoT application is environment monitoring, agriculture with IoT is belong this category,
-usually we would like to known the basic environment data like temperature, humidity or air quality, and then famers would also like to known soil (pH value or moisture), sun light (brightness) and rain (density). 
+The famous category of IoT application is environment monitoring, and agriculture is belong to this category,
+usually we would like to known the basic environment data like temperature, humidity or air quality, and the famers would also like to known soil condition, sun light's brightness and rain density. 
 </article>
 
-By collecting the real time environment data to server,  agricultre experts can design and suggest an automative, which perform action while the environment situationshave changed.
+By collecting the real time environment data to server, the engineer can design an internet control system for running a farm automatically, and also save the resources like human force, water and fertilizer.
 
-<h3>Exmple like</h3>
+<h3>Sensors can collect farm situations and WiFi module will upload them to server, with a designed internet control system, every activity can be done by machine, drone and robot, example like</h3>
 
-1. Turn on watering machine while humidity is low
+1. Turn on watering machine while rain density is low
    <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Agriculture/agriculture-watering.jpg" height="75%" width="75%">
    
 <hr/>
-2. Turn on LED when sun light is not sufficient (Or some industry wanted crops to do photosynthesis at night too)
+2. Turn on LED when sun light is not sufficient (Or let the plant to do photosynthesis 24 hours)
    <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Agriculture/LED_lighting_in_agriculture-667x328.jpg" height="75%" width="75%" >
 <hr/>
-3. Active drone to do fertilization if the pH value of soil doesn't meet the condition
+
+3. Activate the drone to fertilize crops if the soil's nutrients does not meet condition
    <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Agriculture/farming-drones.jpg" height="75%" width="75%">
 <hr/>
-4. Let the robots go haverst your crops after they growth
+4. Activate the robot to haverst crops after they have growth enough height
    <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Agriculture/harvest.jpg" height="75%" width="75%">
   
 
-With IoT technology, modern agriculture is performing efficieny and without permanent human force.
+With IoT technology, modern agriculture is performing efficieny, automatic and green way .
 
 >The briefing I give above is based on real industry purpose. For my firmware only monitor the data and upload to server.
 
