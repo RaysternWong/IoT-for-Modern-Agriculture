@@ -16,13 +16,13 @@
 <hr/>
 4. After uploaded, open the serial port monitor ( top right).
    <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Arduino/serial%20monitor.PNG"/>
-   
+   <br/>
    Set the baudrate to 115200, and 'BOTH NL & CR' 
    <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Arduino/Print%20out%20message.PNG"/>
    
    The message above is printed by my firmware code, every time the board start up, it will scan the target WiFi's SSID first, then only    connect it. This feature is implemented for troubleshoot purpose, if the target SSID cannot be connected <br/>
    
-   <b><ins>The case can be</ins></b>
+   <b><ins>The case can be</ins></b><br/>
    a. The SSID is not available<br/>
    b. The distance is too long<br/>
    c. The password is wrong<br/>
