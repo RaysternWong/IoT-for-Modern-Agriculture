@@ -29,8 +29,8 @@
    
    By scanning the available WiFi's at beginning can let us identify the situation, if the target SSID is scanned but not connected then    we can known it is belong to case'c' or 'd'. You can remove the WiFi's scan feature if you don't expect to do any troubleshooting.
    
-   So, if you board is working, then you are able to see a complete 1 cycle message as shown above. <br/>(Ignore brightness control message, I did not implement it in openSource branch)
+   So, if you board is working, then you are able to see a complete 1 cycle message as shown above. <br/><i>(Ignore brightness control message, I did not implement it in openSource branch)</i>
    
-   If you did not see it, you may try another framework version, or [fully erase](http://www.pratikpanda.com/completely-format-erase-      esp8266-flash-memory/) your board <br/> <i>(take note nodeMCU refer to esp8266-12E, is 4M memory device please erase with the instruction said)</i>
+   If you did not see it, you may try another framework version, or [fully erase](http://www.pratikpanda.com/completely-format-erase-      esp8266-flash-memory/) your board <br/> <i>(take note nodeMCU refer to esp8266-12E, is 4M memory device please erase as the instruction said)</i>
    
    After 1 cycle is run, you should be able to see the data updated in your thingSpeak channel, please do remember test your board with    reset and power off to ensure it is working consistency.
