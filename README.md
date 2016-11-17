@@ -2,7 +2,7 @@
 
 <h2>A nodeMCU firmware for IoT of agriculture application</h2>
 
-<img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Agriculture/self%20farming.jpg" width="45%" height="100%" /> <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Agriculture/farm%20monitor.jpg" width="45%" height="45%" />
+<img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Agriculture/self%20farming.jpg" width="45%" height="300px%" /> <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Agriculture/farm%20monitor.jpg" width="45%" height="45%" />
 
 If you are doing self farming and you would like to monitor your farm by using IoT technology, this firmware is implemented for monitoring environmenet data of temperature, humidity, brightness and rain density. I will explain how to use and improve it, you are welcome to take my firmware but it is not sufficient for industry purpose.  
 
