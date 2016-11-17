@@ -17,18 +17,18 @@ Sensors can collect farm situations and WiFi module will upload them to server, 
    <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Agriculture/agriculture-watering.jpg" height="75%" width="75%">
    
 <hr/>
-<b>2. Turn on LED when sun light is not sufficient (Or let the plant to do photosynthesis 24 hours)</b>
+2. Turn on <span><b>LED</b></span> when sun light is not sufficient (Or let the plant to do photosynthesis 24 hours)
    <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Agriculture/LED_lighting_in_agriculture-667x328.jpg" height="75%" width="75%" >
 <hr/>
 
-<b>3. Activate the drone to fertilize crops if the soil's nutrients does not meet condition</b>
+3. Activate the drone to <span><b>fertilize</b></span> crops if the soil's nutrients does not meet condition
    <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Agriculture/farming-drones.jpg" height="75%" width="75%">
 <hr/>
-<b>4. Activate the robot to haverst crops after they have growth enough height</b>
+4. Activate the robot to <span><b>haverst</b></span> crops after they have growth enough height
    <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Agriculture/harvest.jpg" height="75%" width="75%">
   
 
-With IoT technology, modern agriculture is performing efficieny, automatic and green way .
+With IoT technology, modern agriculture is performing efficieny, automatic and in green way.
 
 >The briefing I give above is based on real industry purpose. For my firmware only monitor the data and upload to server.
 
