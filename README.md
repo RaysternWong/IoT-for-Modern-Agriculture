@@ -22,7 +22,7 @@
 3. The [Components](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Component.md) are used in this project in-      order to collect environment data the upload to server.
 4. This [Server](https://thingspeak.com) is used for monitor , analysis and action.
 
-<h3>Content</h3>
+<h3>Procedure</h3>
 5. [Build your device](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Build%20your%20device.md)
 6. [Setup your server](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Register%20ThingSpeak.md)
 7. [Setup your Arduino](https://github.com/Raydivine/NodeMCU-with-IoT-practice/blob/master/Tutorial/NodeMCU%20Arduino%20Setting.md)
