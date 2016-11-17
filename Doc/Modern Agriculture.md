@@ -8,21 +8,23 @@ usually we would like to known the basic environment data like temperature, humi
 </article>
 
 By collecting the real time environment data to server, the engineer can design an internet control system for running a farm automatically, and also save the resources like human force, water and fertilizer.
+<hr/>
+Sensors can collect farm situations and WiFi module will upload them to server, with a internet control system, every activity can be done by machine, drone and robot.
 
-<h3>Sensors can collect farm situations and WiFi module will upload them to server, with a designed internet control system, every activity can be done by machine, drone and robot, example like</h3>
+<h5>example like</h5>
 
-1. Turn on watering machine while rain density is low
+<b>1. Turn on watering machine while rain density is low</b>
    <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Agriculture/agriculture-watering.jpg" height="75%" width="75%">
    
 <hr/>
-2. Turn on LED when sun light is not sufficient (Or let the plant to do photosynthesis 24 hours)
+<b>2. Turn on LED when sun light is not sufficient (Or let the plant to do photosynthesis 24 hours)</b>
    <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Agriculture/LED_lighting_in_agriculture-667x328.jpg" height="75%" width="75%" >
 <hr/>
 
-3. Activate the drone to fertilize crops if the soil's nutrients does not meet condition
+<b>3. Activate the drone to fertilize crops if the soil's nutrients does not meet condition</b>
    <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Agriculture/farming-drones.jpg" height="75%" width="75%">
 <hr/>
-4. Activate the robot to haverst crops after they have growth enough height
+<b>4. Activate the robot to haverst crops after they have growth enough height</b>
    <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Agriculture/harvest.jpg" height="75%" width="75%">
   
 
