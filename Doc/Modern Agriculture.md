@@ -13,7 +13,7 @@ Sensors can collect farm situations and WiFi module will upload them to server, 
 
 <h3><ins>Example Like</ins></h3>
 
-<b>1. Turn on watering machine while rain density is low</b>
+1. Turn on <span><b>watering</b></span> machine while rain density is low
    <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Agriculture/agriculture-watering.jpg" height="75%" width="75%">
    
 <hr/>
