@@ -1,6 +1,6 @@
 <h1> The components used in this project </h1>
 
-<h4> 1. [NodeMCU](https://en.wikipedia.org/wiki/NodeMCU) WiFi Module (ESP8266-12E)</h4>
+<h4> 1. <span>[NodeMCU](https://en.wikipedia.org/wiki/NodeMCU)</span> WiFi Module (ESP8266-12E)</h4>
 <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Resources/Nodemcu.jpg" alt="NodeMCU" height="60%" width="60%"/>
  
 <h4> 2. [DHT11](https://www.adafruit.com/product/386) (Humidity and temperature sensor) </h4>
