@@ -30,7 +30,7 @@ By appllying IoT technology and advanced industrial machine, modern agriculture 
 <hr/>
 See the relative refferences <br/>
 1.[Industry_4.0](https://en.wikipedia.org/wiki/Industry_4.0)<br/>
-2.[Internet Control System](https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=Internet+Control+System)<br/>
+2.[Internet Control System](http://www.geautomation.com/industrial-internet-control-system-iics)<br/>
 3.[Big Data](https://en.wikipedia.org/wiki/Big_data)<br/>
 
 >The briefing I give above is based on future industry idea. For this project only monitor and analysis the data through server.
