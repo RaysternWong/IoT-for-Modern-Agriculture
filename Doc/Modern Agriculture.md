@@ -25,8 +25,7 @@ For a high level industry, all activities are doned by intelligent machine like 
 <hr/>
 4. Activate the robot to <span><b>haverst</b></span> the crops after they have growth enough height
    <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Agriculture/harvest.jpg" height="75%" width="75%">
-  
-
+<hr/>
 By appllying IoT technology and advanced industrial machine, modern agriculture is performing in high efficiency, automotive and gree way.
 
 See the relative refferences <br/>
