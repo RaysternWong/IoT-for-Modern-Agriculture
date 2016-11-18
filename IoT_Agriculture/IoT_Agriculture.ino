@@ -21,7 +21,6 @@ unsigned long operationChannel = 171780;
 const char *operationWrite = "XY2RZA5HK5ADFW2F"; 
 const char *operationRead  = "RJI8HKEATJP2H5EM"; 
 
-//( TARUC Wireless ) ,( AceJocker , jocker233) , ( WongIoT , nodemcu888 ) , ( familywong88 , 72680384 )
 const char* ssid = "WongIoT";
 const char* password = "nodemcu888";
 
