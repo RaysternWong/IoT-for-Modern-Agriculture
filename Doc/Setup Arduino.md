@@ -19,7 +19,7 @@
 4. Install ThingSpeak Library, this library allow you direct connect to your thingSpeak channel.
    Go to Sketch->Include Library->Manage libraries , search thingSpeak
    
-   ![alt text](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Arduino/thingspeal%20library%20manager.PNG)
+   ![alt text](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Arduino/thingspeak%20library%20manager.PNG)
    
    Install SimpleDHT Library, this library has the functions to read temperature and humidity data from DHT11 sensor
    ![alt text](https://github.com/Raydivine/NodeMCU-with-IoT-practice/blob/master/Doc/Tutorial%20Image/DHT11%20library%20manager.PNG)
