@@ -29,10 +29,10 @@ For a high level industry, all activities are doned by intelligent machine like 
 
 By appllying IoT technology and advanced industrial machine, modern agriculture is performing in high efficiency, automotive and gree way.
 
-See the relative refferences 
-1.[Industry_4.0](https://en.wikipedia.org/wiki/Industry_4.0)
-2.[Internet Control System](https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=Internet+Control+System)
-3.[Big Data](https://en.wikipedia.org/wiki/Big_data)
+See the relative refferences <br/>
+1.[Industry_4.0](https://en.wikipedia.org/wiki/Industry_4.0)<br/>
+2.[Internet Control System](https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=Internet+Control+System)<br/>
+3.[Big Data](https://en.wikipedia.org/wiki/Big_data)<br/>
 
 >The briefing I give above is based on future industry idea. For this project only monitor and analysis the data through server.
 
