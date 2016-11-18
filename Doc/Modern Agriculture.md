@@ -3,34 +3,38 @@
 <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Agriculture/Agriculture%20with%20IoT.png" alt="iot of agriculture" height="100%" width="100%">
 
 <article>
-The famous category of IoT application is environment monitoring, and agriculture is belong to this category,
-usually we would like to known the basic environment data like temperature, humidity or air quality, and the famers would also like to known soil condition, sun light's brightness and rain density. 
+The famous category of IoT application is environment monitoring and agriculture is belong to it,
+
+In an IoT system of agriculture, the environment temperature, humidity, brightness, soil condition, air quality and rain density data are collected by the relevant sensors, and then upload to server through an IoT controller for monitor and analysis purpose. The <span><b>Internet Control System</b></span> usually has been designed an algorithm for anlayze the environment situations and also provide the solution to handle farm activities.
+
+For a high level industry, all activities are doned by intelligent machine like robots and drones.
 </article>
-
-By collecting the real time environment data to server, the engineer can design an internet control system for running a farm automatically, and also save the resources like human force, water and fertilizer.
 <hr/>
-Sensors can collect farm situations and WiFi module will upload them to server, with a internet control system, every activity can be done by machine, drone and robot.
-
-<h3><ins>Example Like</ins></h3>
+<h3><ins>For the examples</ins></h3>
 
 1. Turn on <span><b>watering</b></span> machine while rain density is low
    <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Agriculture/agriculture-watering.jpg" height="75%" width="75%">
    
 <hr/>
-2. Turn on <span><b>LED</b></span> when sun light is not sufficient (Or let the plant to do photosynthesis 24 hours)
+2. Turn on <span><b>LED</b></span> when sun light is not sufficient (Or let the plant doing photosynthesis 24 hours)
    <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Agriculture/LED_lighting_in_agriculture-667x328.jpg" height="75%" width="75%" >
 <hr/>
 
-3. Activate the drone to <span><b>fertilize</b></span> crops if the soil's nutrients does not meet condition
+3. Activate the drone to <span><b>fertilize</b></span> the crops if soil's nutrients does not meet condition
    <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Agriculture/farming-drones.jpg" height="75%" width="75%">
 <hr/>
-4. Activate the robot to <span><b>haverst</b></span> crops after they have growth enough height
+4. Activate the robot to <span><b>haverst</b></span> the crops after they have growth enough height
    <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Agriculture/harvest.jpg" height="75%" width="75%">
   
 
-With IoT technology, modern agriculture is performing efficieny, automatic and in green way.
+By appllying IoT technology and advanced industrial machine, modern agriculture is performing in high efficiency, automotive and gree way.
 
->The briefing I give above is based on real industry purpose. For my firmware only monitor the data and upload to server.
+See the relative refferences 
+1.[Industry_4.0](https://en.wikipedia.org/wiki/Industry_4.0)
+2.[Internet Control System](https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=Internet+Control+System)
+3.[Big Data](https://en.wikipedia.org/wiki/Big_data)
+
+>The briefing I give above is based on future industry idea. For this project only monitor and analysis the data through server.
 
 
 
