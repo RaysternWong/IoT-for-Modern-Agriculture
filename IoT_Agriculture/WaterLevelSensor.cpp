@@ -66,6 +66,6 @@ int readWaterLevel(int pinNum){
   else  MEASURE_IN_40MM(sensorValue);
 
   digitalWrite(WL_POWER, LOW);  //Turn off the sensor
-  return ( waterHeight > 40 ? 40 : waterHeight);  //Maxium return is 40mm
+  return ( waterHeight > 40 ? 40 : waterHeight);  //Maximum return is 40mm
 }
 
