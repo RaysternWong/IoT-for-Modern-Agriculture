@@ -5,7 +5,7 @@
 <article>
 The famous category of IoT application is environment monitoring and agriculture is belong to it,
 
-For an IoT of agriculture system, the environment temperature, humidity, brightness, soil condition, air quality and rain density data are collected by the relevant sensors, and then upload to server through an IoT controller for monitor and analysis purpose. The <span><b>Internet Control System</b></span> usually has been designed an algorithm for anlayze the environment situations and  provide the solution to handle farm activities.
+For an IoT of agriculture system, the environment temperature, humidity, brightness, soil condition, air quality and rain density data are collected by the relevant sensors, and then uploaded to server through an IoT controller for monitor and analysis purpose. The <span><b>Internet Control System</b></span> usually has been designed an algorithm for anlayze the environment situations and  provide the solution to handle farm activities.
 
 For  high level industry, all activities are done by intelligent machine like robots and drones.
 </article>
@@ -34,4 +34,3 @@ See the relative refferences <br/>
 3.[Big Data](https://en.wikipedia.org/wiki/Big_data)<br/>
 
 >The briefing I give above is based on future industry idea. For this project only monitor and analysis the data through server.
-
