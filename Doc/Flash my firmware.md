@@ -30,7 +30,7 @@
    The message above is printed by my firmware code, every time the board start up, it will scan the target available network first,        then only connect to target network, this feature is is implement for troubleShoot purpose.
    <br/>
    
-   <ins>If the target SSID cannot be connected, the case can be</ins></b><br/>
+   <b><ins>If the target SSID cannot be connected, the case can be</ins></b><br/>
    a. The SSID is not available<br/>
    b. The distance is too long<br/>
    c. The password is wrong<br/>
