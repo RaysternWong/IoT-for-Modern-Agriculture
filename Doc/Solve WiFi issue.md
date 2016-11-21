@@ -1,4 +1,4 @@
-<h1>Solve WiFi issue<h1/>
+<h1>Solve WiFi issue</h1>
 
 For ESP8266 Arduino framework 2.3.0, there is an [issue](https://github.com/esp8266/Arduino/issues/2265) which WiFi is not working.
 (I tried their suggested solution but couldn't get it solve, so I am using 2.0.0 .
@@ -13,8 +13,5 @@ If is not working, you may downgrade the framework by remove the current version
 if you don't remove it I believe the versions may mix together, 
 or it is better you that clear the package manually in 
 'C:\Users[username]\AppData\Roaming\Arduino15\packages\esp8266\hardware' before install the new one
-
-You can also try [fully erase](http://www.pratikpanda.com/completely-format-erase-%20%20%20%20%20%20esp8266-flash-memory/)
-the board, take note that NodeMCU referring to ESP8266-12E, is a 4M device so please erase as the instruction said.
 
 If you successful make the WiFI working, please do remember test with reset to power cycle to ensure it is working consistency.
