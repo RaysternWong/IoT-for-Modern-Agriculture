@@ -1,5 +1,5 @@
 <h3>Setup Arduino</h3>
-<hr/>
+
 1. Download and install [Arduino IDE](https://www.arduino.cc/en/Main/Software) , if you would like use portable version, please download      from "Window Zip File"<br/>
    The installer will request you to install CP210X driver as well, please accept it for connect to NodeMCU.
 <hr/>
