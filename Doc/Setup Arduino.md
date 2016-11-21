@@ -11,7 +11,7 @@
    <br/>
    ![alt text](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Arduino/esp8266%20board%20manager.PNG)
    
-   There is WiFI not working [issue](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Solve%20WiFi%20issue.md) on version 2.3.0, you may have a look on it first, or viewe in last procedure. 
+   There is WiFI not working [issue](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Solve%20WiFi%20issue.md) on version 2.3.0, you may have a look on it first, or view at last procedure. 
    <br/>
 <hr/>
 4. Go to Sketch->Include Library->Manage libraries , search 'thingSpeak' for install its Library, this library allow you write and read        data between channel.<br/>
