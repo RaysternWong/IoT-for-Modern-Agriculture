@@ -12,11 +12,6 @@
    <br/>
    ![alt text](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Arduino/esp8266%20board%20manager.PNG)
    <br/>
-   There was an [Issue](https://github.com/esp8266/Arduino/issues/2265) about framework version 2.3.0 , which the wifi is not working, I face it too and their suggested solution did not work for me, so I am using version 2.0.0.
-   
-   I would recommend you to use the lastest version, please upload the example skectch from File->Examples->ESP8266WIFI->WIFISCAN to your board, then open the port terminal to observe the print out message for indentify is the WiFi working, please test with reset and power off your board to ensure it is fully working.
-   
-   If is not working, then you may downgrade the framework by remove the current version first, if you don't remove it I believe the versions may mix together, or it is better you that clear the package manually in C:\Users[username]\AppData\Roaming\Arduino15\packages\esp8266\hardware before install new one
 <hr/>
 4. Go to Sketch->Include Library->Manage libraries , search 'thingSpeak' for install its Library, this library allow you write and read        data between channel.<br/>
    <br/>
