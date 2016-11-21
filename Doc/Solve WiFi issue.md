@@ -11,7 +11,7 @@ from 'File->Examples->ESP8266WIFI->WIFISCAN' to your board,
 then open the port terminal to observe the print out message, if there is SSID scanned then means the WiFI is working.
 <br/>
 
-(Wheter is work or not, reset and power cycle your board to test the status.
+Wheter is work or not, reset and power cycle your board to test the status.
 <br/>
 
 If is not working, you may downgrade the framework by remove the current version first,
