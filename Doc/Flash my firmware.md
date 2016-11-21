@@ -32,10 +32,15 @@
    d. The SSID its self doesn't has internet connectivity<br/>
    e. The board's WiFi is not working<br/><br/>
    
-   By scanning the available WiFi's at beginning can let us identify the situation, if the target SSID is scanned but not connected then    we can known it is the case is belong to 'c' or 'd'. You can remove the WiFi's scan feature if you don't expect to do any troubleshooting.
+   If you cannot scan any network but you know there is network around your board, than means you board's wifi is not working, please      read [this](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Solve%20WiFi%20issue.md) to solve it.
+   <br/>
    
-   You are able to see a complete 1 cycle message as shown above if your board is working. <br/><i>(Ignore brightness control message, I did not implement it in openSource branch)</i>
+   By scanning the available WiFi's at beginning can let us identify the situation, if the target SSID is scanned but not connected then    we can known it is the case is belong to 'c' or 'd'. You can remove the WiFi's scan feature if you don't expect to do any                troubleshooting.
+   <br/>
    
-   If you did not see it, you may try another framework version, or [fully erase](http://www.pratikpanda.com/completely-format-erase-      esp8266-flash-memory/) your board <br/> <i>(take note nodeMCU refer to esp8266-12E, is 4M memory device please erase as the instruction said)</i>
+   You are able to see a complete 1 cycle message as shown above if your board is working. 
+   <br/>
+   <i>(Ignore brightness control message, I  did not implement it in openSource branch)</i>
+   <br/>
    
    After 1 cycle is run, you should be able to see the data updated in your thingSpeak channel, please do remember test your board with    reset and power cycle to ensure it is working consistency.
