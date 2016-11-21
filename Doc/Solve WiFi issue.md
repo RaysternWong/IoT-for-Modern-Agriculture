@@ -1,9 +1,9 @@
 <h1>Solve WiFi issue</h1>
 For ESP8266 Arduino framework 2.3.0, there is an [issue](https://github.com/esp8266/Arduino/issues/2265) which WiFi is not working.
 <br/>
-
 (I tried their suggested solution but couldn't get it solve, so I am using 2.0.0 .
 <br/>
+
 I would recommend you try the lastest version, for test is the WiFI working, please upload the example skectch 
 <br/>
 from 'File->Examples->ESP8266WIFI->WIFISCAN' to your board, 
