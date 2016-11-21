@@ -1,6 +1,6 @@
 <h3>Setup Arduino</h3>
 <hr/>
-1. Download and install[Arduino IDE](https://www.arduino.cc/en/Main/Software) , if you would like use portable version, please download        from "Window Zip File"<br/>
+1. Download and install [Arduino IDE](https://www.arduino.cc/en/Main/Software) , if you would like use portable version, please download      from "Window Zip File"<br/>
    The installer will request you to install CP210X driver as well, please accept it for connect to NodeMCU.
 <hr/>
 2. Open Arduino IDE,nclick on File->Preference , copy the URL below into "Addition Board Manager URL"<br/>
@@ -18,7 +18,7 @@
    <br/>
    Install SimpleDHT Library as well , this library has the implementation to read temperature and humidity data from DHT11 sensor
    <br/>
-   ![alt text](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Tutorial%20Image/DHT11%20library%20manager.PNG)
+   ![alt text](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Arduino/DHT11%20library%20manager.PNG)
    <br/>
    <i>Arduino library contain a lot of resources, so you don't have to implement them as long they are found in library.</i>
    
