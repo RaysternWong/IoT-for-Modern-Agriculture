@@ -10,7 +10,7 @@
    
    <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Arduino/Replace%20id%20and%20key.PNG"/>   
 <hr/>   
-4. Click compile and then upload button (top left) to upload the firmware to your board,
+4. Click compile and upload button (top left) to upload the firmware to your board,
   
    <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Arduino/compile%20and%20upload.PNG" />
 <hr/>
