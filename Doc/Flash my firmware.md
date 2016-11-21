@@ -8,13 +8,13 @@
 <hr/>
 3. Replace your channel ID, write api key and read api key into my code, 
    
-   <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Arduino/Replace%20id%20and%20key.PNG"/>
-   
-   Click compile and then upload button (top left) to upload the firmware to your board,
+   <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Arduino/Replace%20id%20and%20key.PNG"/>   
+<hr/>   
+4. Click compile and then upload button (top left) to upload the firmware to your board,
   
    <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Arduino/compile%20and%20upload.PNG" />
 <hr/>
-4. After uploaded, open the serial port monitor ( top right).
+5. After uploaded, open the serial port monitor ( top right).
    <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Arduino/serial%20monitor.PNG"/>
    <br/>
    Set the baudrate to 115200, and 'BOTH NL & CR' 
