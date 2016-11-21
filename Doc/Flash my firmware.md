@@ -24,7 +24,7 @@
    <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Arduino/Print%20out%20message.PNG"/>
    <br/>
    
-   If you cannot scan any network but you know there is network around your board, than means you board's wifi is not working, please      read [this](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Solve%20WiFi%20issue.md) to solve it.
+   If you cannot scan any network but you know there is network around your board, then means you board's wifi is not working, please      read [this](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Solve%20WiFi%20issue.md) to solve it.
    <br/>
    
    The message above is printed by my firmware code, every time the board start up, it will scan the target available network first,        then only connect to target network, this feature is is implement for troubleShoot purpose.
