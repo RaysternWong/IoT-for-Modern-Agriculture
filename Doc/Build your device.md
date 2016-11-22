@@ -6,7 +6,7 @@ Please have a look of the nodeMCU pin map before start to build the circuit
 <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Data/NodeMCU%20Pin%20Map.png" height="75%" width="75%" />
 <hr/>
 <h3><ins>Circuit Diagram</ins></h3>
-   <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Resources/circuit%20diagram.PNG" alt="circuit" height="75%" width="75%"/>
+   <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Resources/circuit.PNG" alt="circuit" height="75%" width="75%"/>
 <hr/>
 <h3><ins>Why is the circuit like this?</ins></h3>
 Nodemcu has only one [ADC](https://learn.sparkfun.com/tutorials/esp8266-thing-hookup-guide/using-the-arduino-addon) pin which can read the voltage value, for non ADC pins can only read voltage high and low.
