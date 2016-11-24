@@ -17,3 +17,7 @@ The application of Internet of Things
 * [Metropolitan scale deployments](https://en.wikipedia.org/wiki/Internet_of_things#Metropolitan_scale_deployments)
 * [Consumer application](https://en.wikipedia.org/wiki/Internet_of_things#Consumer_application)
 
+
+
+
+
