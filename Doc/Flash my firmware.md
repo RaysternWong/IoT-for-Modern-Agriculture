@@ -46,3 +46,7 @@
    <br/>
   
    After 1 cycle is run, you should be able to see the data updated in your thingSpeak channel.
+   <br/>
+   
+   <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/ThingSpeak/channel%20updating.PNG" />
+   
