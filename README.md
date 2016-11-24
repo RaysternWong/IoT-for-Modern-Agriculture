@@ -15,7 +15,7 @@ By applying IoT technology, you can know your farm condition in 24 hours at anyw
 For a perfect agriculture monitoring system, the soil moisture , nutrient and air quality data are necessary be monitoring too. Apologize that I could not get those sensors, so they are not implementing in this firmware. I will explain how to use and improve my project, you are welcome to take , modifiy and republish it.
   
 <h3>Introduction</h3>
-1. [IoT ( Internet of things)](https://en.wikipedia.org/wiki/Internet_of_things)
+1. [IoT ( Internet of things)](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Internet%20of%20Things.md)
 2. [How does IoT involved in modern agriculture ](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Modern%20Agriculture.md)
 
 <h3>Resources and Server</h3>
