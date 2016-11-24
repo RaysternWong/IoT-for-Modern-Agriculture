@@ -3,7 +3,7 @@
 ![](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Agriculture/internet-of-things.jpg)
 
 
-The [Internet of things](https://en.wikipedia.org/wiki/Internet_of_things)is the internetworking of physical devices, vehicles , buildings and other items—embedded with electronics, software, sensors, actuators, and network connectivity that enable these objects to collect and exchange data.
+The [Internet of things](https://en.wikipedia.org/wiki/Internet_of_things) is the internetworking of physical devices, vehicles , buildings and other items—embedded with electronics, software, sensors, actuators, and network connectivity that enable these objects to collect and exchange data.
 
 The application of Internet of Things
 * [Media](https://en.wikipedia.org/wiki/Internet_of_things#Media)
