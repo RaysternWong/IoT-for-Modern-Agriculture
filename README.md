@@ -2,7 +2,7 @@
 
 <h2>A nodeMCU embedded system for IoT of agriculture application</h2>
 <i>   This is an environment monitoring project by using IoT technology, the monitoring object are temperature, humidity, brightness and rain density. This project is build for investigating how does IoT(Internet of Things) apply in modern agriculture, so it is named as its intend.</i>
-<br/><i>[Images sources](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Image%20src.md)</i><br/>
+<br/><i>The [Images sources](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Image%20src.md) in this repo are search by online for describe purpose</i>
 <hr/>
 
 <h3>Overview</h3>
