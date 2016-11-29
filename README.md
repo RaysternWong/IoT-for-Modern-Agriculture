@@ -5,7 +5,7 @@
 <hr/>
 
 <h3>Overview</h3>
-<i> All the photos are taken online for desribe purpose</i>
+<i> All the photos are taken online for desribe purpose</i><br/>
  <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Agriculture/self%20farming.jpg" width="45%" height="250px" />  <img src="https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Image/Agriculture/farm%20monitor.jpg" width="45%" height="45%" />
 
    <ins><i>If you are doing self farming, sometime when you are out of home, or going to travel, there is no body take care your farm, so what to do when your farm need to be watering?</i></ins>
