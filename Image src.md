@@ -1,5 +1,5 @@
 <h1> Image source</h1>
-<h3><i> The below images are serach by google image engine and used in this repo for article describe purpose, if the permision to use is prohibited then I will remove them</i></h3>
+<h6><i> The below images are serach by online and used in this repo for article describe purpose, I will remove them if the permision to use is prohibited</i></h6>
 <br/><br/>
 
 <img src="http://www.greenwerkspro.com/wp-content/uploads/2013/04/5-Tips-To-Start-A-Self-sustaining-Farm-In-Your-Own-Backyard.jpg" height="30%" width="30%"/> <br/>
