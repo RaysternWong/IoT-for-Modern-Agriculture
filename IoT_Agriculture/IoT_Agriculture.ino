@@ -2,8 +2,7 @@
 #include <ESP8266WiFi.h>
 #include <SimpleDHT.h>
 #include "ThingSpeak.h"
-#include "DHT.h"
-#include "Server.h"
+#include "Task.h"
 #include "Network.h"
 #include "Setting.h"
 #include "Photoresistor.h"
@@ -48,6 +47,7 @@ void loop(){
   waterLevel  = readWaterLevel(WATER_LEVEL_PIN);
   dht11.read(DHT11_PIN, &temperature, &humidity, NULL);
 
+/*
   Serial.print("Temperature              : ");
   Serial.print(temperature);
   Serial.println(" celcius");
@@ -55,9 +55,11 @@ void loop(){
   Serial.print("Relative Humidity        : ");
   Serial.print(humidity);
   Serial.println(" percent");
-             
-  Serial.printf("Illuminance (Brightness) : %d Lux\n", illuminance);
-  Serial.printf("Water level (Millimeter) : %d mm\n\n", waterLevel);
+  */
+  Serial.printf("Temperature       (celcius)    : %d C\n", temperature);
+  Serial.printf("Relative Humidity (percent)    : %d %\n", humidity);
+  Serial.printf("Illuminance       (Brightness) : %d lux\n", illuminance);
+  Serial.printf("Water level       (Millimeter) : %d mm\n\n", waterLevel);
 
   Serial.println("Writting data to ThingSpeak......");
   ThingSpeak.setField(1, (int)temperature);
@@ -66,12 +68,7 @@ void loop(){
   ThingSpeak.setField(4, waterLevel);
   ThingSpeak.writeFields(monitorChannel, monitorWrite);  
 
-  Serial.println("Reading brightness control from ThingSpeak......");
-  int ledBrightness = ThingSpeak.readFloatField(operationChannel, 1);
-  
-  Serial.printf("Set LedBrightness to     : %d Lux\n", ledBrightness);
-  ledBrightness = map(ledBrightness, 0, 35000, 0, 255);
-  analogWrite(LED, ledBrightness);
+  control_LED(operationChannel,1);
 
   Serial.println("ThingSpeak only accept updates every 15 seconds, please wait for next update\n\n");
   delay(13000);  // Due to read LED brighntess need 3 second, so set the delay value as 13 second
