@@ -34,6 +34,7 @@ void setup() {
   pinMode( PH_POWER, OUTPUT );
   pinMode( WL_POWER, OUTPUT );
   pinMode( LED, OUTPUT );
+  pinMode( MOTOR, OUTPUT );
 
   ThingSpeak.begin(client);
   Serial.println("\n");
@@ -47,15 +48,6 @@ void loop(){
   waterLevel  = readWaterLevel(WATER_LEVEL_PIN);
   dht11.read(DHT11_PIN, &temperature, &humidity, NULL);
 
-/*
-  Serial.print("Temperature              : ");
-  Serial.print(temperature);
-  Serial.println(" celcius");
-
-  Serial.print("Relative Humidity        : ");
-  Serial.print(humidity);
-  Serial.println(" percent");
-  */
   Serial.printf("Temperature       (celcius)    : %d C\n", temperature);
   Serial.printf("Relative Humidity (percent)    : %d %\n", humidity);
   Serial.printf("Illuminance       (Brightness) : %d lux\n", illuminance);
