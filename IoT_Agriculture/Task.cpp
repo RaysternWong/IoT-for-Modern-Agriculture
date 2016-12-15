@@ -3,14 +3,62 @@
 #include "ThingSpeak.h"
 #include "Setting.h"
 
+#define LED_FIELD           1
+#define FAN_FIELD           2
+#define WATER_PUMP_FIELD    3
+#define COOLER_FIELD        4
+#define HEATER_FIELD        5
 
-void control_LED(int channel_ID, int field){
-  Serial.println("Reading brightness control from ThingSpeak......");
-  int ledBrightness = ThingSpeak.readFloatField(channel_ID, field);
+#define VALUE_CONTROL_FOR_DEVICE(device, controlVal, maxValOfDevice )  analogWrite( device, map(controlVal, 0, maxValOfDevice, 0, 255) )
+
+void performTasks(int channel_ID){
+
+  Serial.println("Reading brightness, fanSpeed, heaterValue , coolerValue, waterPumpVal from ThingSpeak......");
+
+  int ledBrightness = ThingSpeak.readFloatField(channel_ID, LED_FIELD);
+  int fanSpeed      = ThingSpeak.readFloatField(channel_ID, FAN_FIELD);
+  int waterPumpVal  = ThingSpeak.readFloatField(channel_ID, WATER_PUMP_FIELD);
+  int coolerVal     = ThingSpeak.readFloatField(channel_ID, HEATER_FIELD);
+  int heaterVal     = ThingSpeak.readFloatField(channel_ID, COOLER_FIELD);
   
-  Serial.printf("Set LedBrightness to     : %d Lux\n", ledBrightness);
-  ledBrightness = map(ledBrightness, 0, 35000, 0, 255);
-  analogWrite(LED, ledBrightness);
+  VALUE_CONTROL_FOR_DEVICE( LED       , ledBrightness , 35000); //Set 35000 Lux as the max Brightness of LED
+  VALUE_CONTROL_FOR_DEVICE( FAN       , fanSpeed      , 1);     //Use 1 and 0 as On/Off, doesn't value skecthing
+  VALUE_CONTROL_FOR_DEVICE( WATER_PUMP, waterPumpVal  , 1);     //Use 1 and 0 as On/Off, doesn't value skecthing
+  VALUE_CONTROL_FOR_DEVICE( COOLER    , coolerVal     , 1);     //Use 1 and 0 as On/Off, doesn't value skecthing
+  VALUE_CONTROL_FOR_DEVICE( HEATER    , heaterVal     , 1);     //Use 1 and 0 as On/Off, doesn't value skecthing
+
+
+  //LED_control(ledBrightness);
+}
+
+/*
+void LED_control(int brightness){
+  Serial.printf("Set LedBrightness to     : %d Lux\n", brightness);
+  brightness = map(brightness, 0, 35000, 0, 255);
+  analogWrite(LED, brightness);
 }
 
 
+void fanControl(int fanSpeed){
+  fanSpeed = map(brightness, 0, 1, 0, 255);
+  analogWrite(LED, fanSpeed);
+  
+}
+
+void coolerControl(int coolerVal){
+  brightness = map(brightness, 0, 1, 0, 255);
+  analogWrite(LED, brightness);
+  
+}
+
+void heaterControl(int heaterVal){
+  brightness = map(brightness, 0, 1, 0, 255);
+  analogWrite(LED, brightness);
+}
+
+void waterPumpControl(int waterPumpVal){
+  brightness = map(brightness, 0, 1, 0, 255);
+  analogWrite(LED, brightness);
+}
+
+*/

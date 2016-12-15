@@ -64,8 +64,7 @@ void loop(){
   ThingSpeak.setField(4, waterLevel);
   ThingSpeak.writeFields(monitorChannel, monitorWrite);  
 
-  control_LED(taskChannel,1);
-
-  Serial.println("ThingSpeak only accept updates every 15 seconds, please wait for next update\n\n");
-  delay(13000);  // Due to read LED brighntess need 3 second, so set the delay value as 13 second
+  performTasks(taskChannel);
+  Serial.println("ThingSpeak only accept updates every 15 seconds, waut for 30 second due to there is 2 channel be writting\n\n");
+  delay(30000);  // Due to read LED brighntess need 3 second, so set the delay value as 13 second
 }
