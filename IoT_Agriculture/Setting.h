@@ -19,7 +19,10 @@
 #define A0_internat_value   6     //There was an reading of RSV pin by analogRead(RSV) even it is not connected to output voltage
                                   //So the value has to include for indicate it is the minimum reading
 #define LED                 D8
-#define MOTOR               D6
+#define FAN                 D6
+#define COOLER              D5
+#define HEATER              D4
+#define WATER_PUMP          D3
 #define DHT11_PIN           D7    //Use D7 pin to collect data from DHT11
 #define PHOTO_PIN           RSV   //Use RSV pin to collect data from photoresistor and water level sensor
 #define WATER_LEVEL_PIN     RSV   //In order collect data without conflict, use output pin as supply voltage for manually turn on and off of the sensors

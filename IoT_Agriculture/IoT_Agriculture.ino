@@ -16,9 +16,9 @@ unsigned long analysisChannel = 171094;
 const char *analysisWrite = "4JCJEWOPSIBJHMV2"; 
 const char *analysisRead  = "S0Z31XZI8CHT9JDQ"; 
 
-unsigned long operationChannel = 171780;
-const char *operationWrite = "XY2RZA5HK5ADFW2F"; 
-const char *operationRead  = "RJI8HKEATJP2H5EM"; 
+unsigned long taskChannel = 171780;
+const char *taskWrite = "XY2RZA5HK5ADFW2F"; 
+const char *taskRead  = "RJI8HKEATJP2H5EM"; 
 
 const char* ssid = "WongIoT";
 const char* password = "nodemcu888";
@@ -30,11 +30,15 @@ void setup() {
   Serial.begin(BAUDRATE);
   delay(10);
   connectToWifi(ssid,password); 
-  BLINK_INTERNAL_LED;           //Blink LED for indicate WiFi is connected
-  pinMode( PH_POWER, OUTPUT );
-  pinMode( WL_POWER, OUTPUT );
-  pinMode( LED, OUTPUT );
-  pinMode( MOTOR, OUTPUT );
+  
+  pinMode( LED       , OUTPUT );
+  pinMode( FAN       , OUTPUT );
+  pinMode( COOLER    , OUTPUT );
+  pinMode( HEATER    , OUTPUT );
+  pinMode( WATER_PUMP, OUTPUT );
+
+  pinMode( PH_POWER  , OUTPUT );
+  pinMode( WL_POWER  , OUTPUT );
 
   ThingSpeak.begin(client);
   Serial.println("\n");
@@ -60,7 +64,7 @@ void loop(){
   ThingSpeak.setField(4, waterLevel);
   ThingSpeak.writeFields(monitorChannel, monitorWrite);  
 
-  control_LED(operationChannel,1);
+  control_LED(taskChannel,1);
 
   Serial.println("ThingSpeak only accept updates every 15 seconds, please wait for next update\n\n");
   delay(13000);  // Due to read LED brighntess need 3 second, so set the delay value as 13 second

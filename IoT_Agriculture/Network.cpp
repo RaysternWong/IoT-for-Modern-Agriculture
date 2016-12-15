@@ -1,5 +1,6 @@
 #include <ESP8266WiFi.h>
 #include "Network.h"
+#include "Setting.h"
 #include <SoftwareSerial.h>
 #include <ESP8266WiFi.h>
 
@@ -15,6 +16,7 @@ void connectToWifi(const char *ssid,const char *password){
     Serial.printf("%s is not found, but system will try to connect to it, please ensure the distance is close\n\n", ssid);
   }
   connectSSID(ssid,password);
+  BLINK_INTERNAL_LED;           //Blink LED for indicate WiFi is connected
 }
 
 bool scanSSID(const char *ssid){
