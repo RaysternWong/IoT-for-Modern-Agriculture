@@ -30,7 +30,7 @@ void setup() {
   Serial.begin(BAUDRATE);
   delay(10);
   connectToWifi(ssid,password); 
-  
+
   pinMode( LED       , OUTPUT );
   pinMode( FAN       , OUTPUT );
   pinMode( COOLER    , OUTPUT );
@@ -57,14 +57,17 @@ void loop(){
   Serial.printf("Illuminance       (Brightness) : %d lux\n", illuminance);
   Serial.printf("Water level       (Millimeter) : %d mm\n\n", waterLevel);
 
-  Serial.println("Writting data to ThingSpeak......");
+  Serial.println("Writting data to ThingSpeak......\n");
   ThingSpeak.setField(1, (int)temperature);
   ThingSpeak.setField(2, (int)humidity);
   ThingSpeak.setField(3, illuminance);
   ThingSpeak.setField(4, waterLevel);
   ThingSpeak.writeFields(monitorChannel, monitorWrite);  
 
+  Serial.println("Write finished, delay 25 second for waitting the server perfomed control instruction\n");
+  delay(25000);  //For free version of ThingSpeak, it only accepty update every 15second
+                 // In my case,I choose to delay 25 second due to there is 2 channel updating, and then reading take my 10 second
+
   performTasks(taskChannel);
-  Serial.println("ThingSpeak only accept updates every 15 seconds, waut for 30 second due to there is 2 channel be writting\n\n");
-  delay(30000);  // Due to read LED brighntess need 3 second, so set the delay value as 13 second
+  Serial.println("\n");
 }

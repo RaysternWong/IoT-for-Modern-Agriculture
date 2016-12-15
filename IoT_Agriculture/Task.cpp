@@ -13,52 +13,24 @@
 
 void performTasks(int channel_ID){
 
-  Serial.println("Reading brightness, fanSpeed, heaterValue , coolerValue, waterPumpVal from ThingSpeak......");
+  Serial.println("Reading brightness, fanSpeed, heaterValue , coolerValue, waterPumpVal from ThingSpeak......\n");
 
   int ledBrightness = ThingSpeak.readFloatField(channel_ID, LED_FIELD);
   int fanSpeed      = ThingSpeak.readFloatField(channel_ID, FAN_FIELD);
   int waterPumpVal  = ThingSpeak.readFloatField(channel_ID, WATER_PUMP_FIELD);
   int coolerVal     = ThingSpeak.readFloatField(channel_ID, HEATER_FIELD);
   int heaterVal     = ThingSpeak.readFloatField(channel_ID, COOLER_FIELD);
+
+  Serial.printf("ledBrightness : %d Lux\n", ledBrightness);
+  Serial.printf("fanSpeed      : %d \n", fanSpeed);
+  Serial.printf("waterPumpVal  : %d \n", waterPumpVal);
+  Serial.printf("coolerVal     : %d \n", coolerVal);
+  Serial.printf("heaterVal     : %d \n", heaterVal);
   
   VALUE_CONTROL_FOR_DEVICE( LED       , ledBrightness , 35000); //Set 35000 Lux as the max Brightness of LED
-  VALUE_CONTROL_FOR_DEVICE( FAN       , fanSpeed      , 1);     //Use 1 and 0 as On/Off, doesn't value skecthing
-  VALUE_CONTROL_FOR_DEVICE( WATER_PUMP, waterPumpVal  , 1);     //Use 1 and 0 as On/Off, doesn't value skecthing
-  VALUE_CONTROL_FOR_DEVICE( COOLER    , coolerVal     , 1);     //Use 1 and 0 as On/Off, doesn't value skecthing
-  VALUE_CONTROL_FOR_DEVICE( HEATER    , heaterVal     , 1);     //Use 1 and 0 as On/Off, doesn't value skecthing
-
-
-  //LED_control(ledBrightness);
+  VALUE_CONTROL_FOR_DEVICE( FAN       , fanSpeed      , 1);     //Use 1 and 0 as On/Off, doesn't has value skecthing
+  VALUE_CONTROL_FOR_DEVICE( WATER_PUMP, waterPumpVal  , 1);     //Use 1 and 0 as On/Off, doesn't has value skecthing
+  VALUE_CONTROL_FOR_DEVICE( COOLER    , coolerVal     , 1);     //Use 1 and 0 as On/Off, doesn't has value skecthing
+  VALUE_CONTROL_FOR_DEVICE( HEATER    , heaterVal     , 1);     //Use 1 and 0 as On/Off, doesn't has value skecthing
 }
 
-/*
-void LED_control(int brightness){
-  Serial.printf("Set LedBrightness to     : %d Lux\n", brightness);
-  brightness = map(brightness, 0, 35000, 0, 255);
-  analogWrite(LED, brightness);
-}
-
-
-void fanControl(int fanSpeed){
-  fanSpeed = map(brightness, 0, 1, 0, 255);
-  analogWrite(LED, fanSpeed);
-  
-}
-
-void coolerControl(int coolerVal){
-  brightness = map(brightness, 0, 1, 0, 255);
-  analogWrite(LED, brightness);
-  
-}
-
-void heaterControl(int heaterVal){
-  brightness = map(brightness, 0, 1, 0, 255);
-  analogWrite(LED, brightness);
-}
-
-void waterPumpControl(int waterPumpVal){
-  brightness = map(brightness, 0, 1, 0, 255);
-  analogWrite(LED, brightness);
-}
-
-*/
