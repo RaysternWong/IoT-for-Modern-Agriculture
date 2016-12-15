@@ -18,8 +18,8 @@ void performTasks(int channel_ID){
   int ledBrightness = ThingSpeak.readFloatField(channel_ID, LED_FIELD);
   int fanSpeed      = ThingSpeak.readFloatField(channel_ID, FAN_FIELD);
   int waterPumpVal  = ThingSpeak.readFloatField(channel_ID, WATER_PUMP_FIELD);
-  int coolerVal     = ThingSpeak.readFloatField(channel_ID, HEATER_FIELD);
-  int heaterVal     = ThingSpeak.readFloatField(channel_ID, COOLER_FIELD);
+  int heaterVal     = ThingSpeak.readFloatField(channel_ID, HEATER_FIELD);
+  int coolerVal     = ThingSpeak.readFloatField(channel_ID, COOLER_FIELD);
 
   Serial.printf("ledBrightness : %d Lux\n", ledBrightness);
   Serial.printf("fanSpeed      : %d \n", fanSpeed);
