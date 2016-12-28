@@ -28,9 +28,14 @@ For  high level industry, all activities are done by intelligent machine like ro
    
 By appllying IoT technology and advanced industrial machine, modern agriculture is performing in <span><b>high efficiency, automotive</b></span> and <span><b>green way</b></span>.
 <hr/>
+<br/>
+View [this](https://github.com/Raydivine/IoT-for-Modern-Agriculture/blob/master/Doc/Control%20device%20by%20thingSpeak.md) if you would like implement application above
+<br/>
+
+
 See the relative refferences <br/>
 1.[Industry_4.0](https://en.wikipedia.org/wiki/Industry_4.0)<br/>
 2.[Internet Control System](http://www.geautomation.com/industrial-internet-control-system-iics)<br/>
 3.[Big Data](https://en.wikipedia.org/wiki/Big_data)<br/>
 
->The briefing I give above is based on future industry idea. For this project only monitor and analysis the data through server.
+
