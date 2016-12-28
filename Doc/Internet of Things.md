@@ -16,6 +16,8 @@ The application of Internet of Things
 * [Metropolitan scale deployments](https://en.wikipedia.org/wiki/Internet_of_things#Metropolitan_scale_deployments)
 * [Consumer application](https://en.wikipedia.org/wiki/Internet_of_things#Consumer_application)
 <br/>
+<br/>
+<br/>
 <img src="https://github.com/Raydivine/IoT-for-Modern-Agriculture/blob/master/Doc/Image/Agriculture/IoT%20loop.png" />
 
 
