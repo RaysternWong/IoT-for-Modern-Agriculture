@@ -27,7 +27,7 @@ For a perfect agriculture monitoring system, the soil moisture , nutrient and ai
 6. [Setup your server](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Register%20ThingSpeak.md)
 7. [Setup your Arduino](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Setup%20Arduino.md)
 8. [Connect your device to PC](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Connect%20Device%20to%20PC.md)
-9. [Flash my firmware](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Flash%20my%20firmware.md)
+9. [Flash this embedded software](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Flash%20my%20firmware.md)
 
 <h3>Regards</h3>
 Appreciate to the developers produced [NodeMCU's arduino framework](https://github.com/esp8266/Arduino), it make my life simple.
