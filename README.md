@@ -23,7 +23,7 @@ For a perfect agriculture monitoring system, the soil moisture , nutrient and ai
 4. This [Server](https://thingspeak.com) is used for application monitor , analysis and action.
 
 <h3>Procedure</h3>
-
+5. [Build your device](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Build%20your%20device.md)
 6. [Setup your server](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Register%20ThingSpeak.md)
 7. [Setup your Arduino](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Setup%20Arduino.md)
 8. [Connect your device to PC](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Connect%20Device%20to%20PC.md)
