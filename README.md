@@ -40,7 +40,7 @@ This project is welcome anyone to copy, modify and republish.<br/>
 See the [LICENSE](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/LICENSE) file for license rights and limitations (MIT).
 
 <!--
-<h3>My server</h3>
+<h3>My  server</h3>
 a. [Monitor](https://thingspeak.com/channels/169688) channel is for collecting data and visualize them in graph form <br/>
 b. [Analysis](https://thingspeak.com/channels/171094) channel is for investigate the data characteristics , apply with modern knowledge to calculate&get new data.<br/>
 c. [Task](https://thingspeak.com/channels/171780) channel is for controlling purpose, the WiFi module will upload the on-time data to server, then server will do control adjust and write the instruction to this channel, finally the WiFi module will read the instruction from this channel and then perform the action. 
