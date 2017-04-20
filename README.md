@@ -20,6 +20,7 @@ For a perfect agriculture monitoring system, the soil moisture , nutrient and ai
 2. [How does IoT involved in modern agriculture ](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Modern%20Agriculture.md)
 
 <h3>Resources and Server</h3>
+
 3. The [Components](https://github.com/Raydivine/IoT-of-Modern-Agriculture/blob/master/Doc/Component.md) 
    are used in this project for collect environment data and then upload to server.
 4. This [Server](https://thingspeak.com) is used for application monitor , analysis and action.
